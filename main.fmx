@@ -2771,9 +2771,54 @@ object Form1: TForm1
                 Value = 33.333333333333310000
               end
               item
-                Value = 33.333331666666610000
+                Value = 33.333331666666620000
               end>
-            ControlCollection = <>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = Rectangle2
+                Row = 0
+              end
+              item
+                Column = 1
+                Control = Rectangle3
+                Row = 0
+              end
+              item
+                Column = 2
+                Control = Rectangle4
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = Rectangle5
+                Row = 1
+              end
+              item
+                Column = 1
+                Control = Rectangle6
+                Row = 1
+              end
+              item
+                Column = 2
+                Control = Rectangle7
+                Row = 1
+              end
+              item
+                Column = 0
+                Control = Rectangle8
+                Row = 2
+              end
+              item
+                Column = 1
+                Control = Rectangle9
+                Row = 2
+              end
+              item
+                Column = 2
+                Control = Rectangle10
+                Row = 2
+              end>
             RowCollection = <
               item
                 Value = 33.333335000000080000
@@ -2782,8 +2827,233 @@ object Form1: TForm1
                 Value = 33.333333333333310000
               end
               item
-                Value = 33.333331666666610000
+                Value = 33.333331666666620000
               end>
+            object Rectangle2: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750007629394530000
+              Size.Height = 91.750007629394530000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text3: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '7'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle3: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.749992370605470000
+              Size.Height = 91.750007629394530000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text4: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '8'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle4: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750000000000000000
+              Size.Height = 91.750007629394530000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text5: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '9'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle5: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750007629394530000
+              Size.Height = 91.749992370605470000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text6: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '4'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle6: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.749992370605470000
+              Size.Height = 91.749992370605470000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text7: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '5'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle7: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750000000000000000
+              Size.Height = 91.749992370605470000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text8: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '6'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle8: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750007629394530000
+              Size.Height = 91.750000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text9: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '1'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle9: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.749992370605470000
+              Size.Height = 91.750000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text10: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '2'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
+            object Rectangle10: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750000000000000000
+              Size.Height = 91.750000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text11: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = '3'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 34.000000000000000000
+                TextSettings.Font.StyleExt = {00050000000000000004000000}
+              end
+            end
           end
           object GridPanelLayout5: TGridPanelLayout
             Align = Client
@@ -2830,9 +3100,11 @@ object Form1: TForm1
       end
       object Rectangle1: TRectangle
         Align = Top
+        Fill.Color = xFF72ABD4
         Size.Width = 375.000000000000000000
         Size.Height = 89.000000000000000000
         Size.PlatformDefault = False
+        Stroke.Kind = None
         object Text2: TText
           Align = Client
           Margins.Left = 25.000000000000000000
@@ -2843,9 +3115,14 @@ object Form1: TForm1
           TextSettings.Font.Family = 'Tajawal'
           TextSettings.Font.Size = 24.000000000000000000
           TextSettings.Font.StyleExt = {00050000000000000004000000}
+          TextSettings.FontColor = claWhite
           TextSettings.HorzAlign = Leading
         end
       end
     end
+  end
+  object Brush1: TBrushObject
+    StyleName = 'Brush1'
+    Brush.Color = xFF72ABD4
   end
 end

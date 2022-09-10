@@ -26,6 +26,25 @@ type
     GridPanelLayout6: TGridPanelLayout;
     Rectangle1: TRectangle;
     Text2: TText;
+    Rectangle2: TRectangle;
+    Brush1: TBrushObject;
+    Text3: TText;
+    Rectangle3: TRectangle;
+    Text4: TText;
+    Rectangle4: TRectangle;
+    Text5: TText;
+    Rectangle5: TRectangle;
+    Text6: TText;
+    Rectangle6: TRectangle;
+    Text7: TText;
+    Rectangle7: TRectangle;
+    Text8: TText;
+    Rectangle8: TRectangle;
+    Text9: TText;
+    Rectangle9: TRectangle;
+    Text10: TText;
+    Rectangle10: TRectangle;
+    Text11: TText;
     procedure FloatAnimation1Finish(Sender: TObject);
     procedure FloatAnimation2Finish(Sender: TObject);
   private
