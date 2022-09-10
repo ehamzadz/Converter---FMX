@@ -12,6 +12,6 @@
     <Transaction>2022/09/10 07:45:17.000.987,D:\Github\Android App\Converter - FMX\Project1.dproj=D:\Github\Android App\Converter - FMX\Converter.dproj</Transaction>
   </Transactions>
 	<ActiveMobileDevice>
-		<NoProfile Android="33006584c0c9a38d" Android64="33006584c0c9a38d"/>
+		<NoProfile Android="" Android64="33006584c0c9a38d"/>
 	</ActiveMobileDevice>
 </BorlandProject>
