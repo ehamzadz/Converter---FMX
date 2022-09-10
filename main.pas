@@ -76,6 +76,7 @@ type
     Edit1: TEdit;
     StyleBook1: TStyleBook;
     Edit2: TEdit;
+    Brush2: TBrushObject;
     procedure Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle16Click(Sender: TObject);
@@ -197,38 +198,37 @@ end;
 
 procedure TForm1.Rectangle12Click(Sender: TObject);
 var
-  lengthNum,i,j,h,NumDecimal,NumBinary,num,power :integer;
-  pr:string;
+  lengthNum,i,j,h,NumDecimal,NumBinary,num,power,s,r :integer;
+  pr,q:string;
   //power :real;
 begin
   if whichOneIsActive='decimal' then begin
-    //
+    num := strtoint(edit1.Text);
+
+    s := num;
+    while num>0 do begin
+      //num := num div 2;
+      r := num mod 2;
+      num := num div 2;
+      q := q + inttostr(r);
+
+    end;
+    edit2.Text:= q;
+
   end else begin
-
     if whichOneIsActive='binary' then begin
-
       lengthNum := length(edit2.Text);
-
       i:=1;
       j:= lengthNum-1;
       num := 0;
       while i<= lengthNum do begin
-
         pr := floattostr(power2(2,j));
         power := strtoint(pr);
-        //showmessage(inttostr(power));
         num := num + (strtoint(edit2.Text[i]) * power);
-
-        //showmessage(inttostr(num));
         j:=j-1;
         i:=i+1;
-
       end;
-
-
       edit1.Text:= inttostr(num);
-
-
     end;
   end;
 
