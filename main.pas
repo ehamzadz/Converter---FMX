@@ -80,6 +80,20 @@ type
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle16Click(Sender: TObject);
     procedure Rectangle18Click(Sender: TObject);
+    procedure Edit1Change(Sender: TObject);
+    procedure Rectangle12Click(Sender: TObject);
+    procedure Rectangle8Click(Sender: TObject);
+    procedure Rectangle9Click(Sender: TObject);
+    procedure Rectangle10Click(Sender: TObject);
+    procedure Rectangle5Click(Sender: TObject);
+    procedure Rectangle6Click(Sender: TObject);
+    procedure Rectangle7Click(Sender: TObject);
+    procedure Rectangle2Click(Sender: TObject);
+    procedure Rectangle3Click(Sender: TObject);
+    procedure Rectangle4Click(Sender: TObject);
+    procedure Rectangle13Click(Sender: TObject);
+    procedure Rectangle11Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -88,24 +102,163 @@ type
 
 var
   Form1: TForm1;
+  editDecimal,editBinary :string;
+  whichOneIsActive :string;
+  editDecimalContent, editBinaryContent:string;
 
 implementation
 
 {$R *.fmx}
 
 
+{** A power function from Jack Lyle. Said to be more powerful than the
+    Pow function that comes with Delphi. }
+function Power2(Base, Exponent : Double) : Double;
+{ raises the base to the exponent }
+  CONST
+    cTiny = 1e-15;
 
+  VAR
+    Power : Double; { Value before sign correction }
+
+  BEGIN
+    Power := 0;
+    { Deal with the near zero special cases }
+    IF (Abs(Base) < cTiny) THEN BEGIN
+      Base := 0.0;
+    END; { IF }
+    IF (Abs(Exponent) < cTiny) THEN BEGIN
+      Exponent := 0.0;
+    END; { IF }
+
+    { Deal with the exactly zero cases }
+    IF (Base = 0.0) THEN BEGIN
+      Power := 0.0;
+    END; { IF }
+    IF (Exponent = 0.0) THEN BEGIN
+      Power := 1.0;
+    END; { IF }
+
+    { Cover everything else }
+    IF ((Base < 0) AND (Exponent < 0)) THEN
+        Power := 1/Exp(-Exponent*Ln(-Base))
+    ELSE IF ((Base < 0) AND (Exponent >= 0)) THEN
+        Power := Exp(Exponent*Ln(-Base))
+    ELSE IF ((Base > 0) AND (Exponent < 0)) THEN
+        Power := 1/Exp(-Exponent*Ln(Base))
+    ELSE IF ((Base > 0) AND (Exponent >= 0)) THEN
+        Power := Exp(Exponent*Ln(Base));
+
+    { Correct the sign }
+    IF ((Base < 0) AND (Frac(Exponent/2.0) <> 0.0)) THEN
+      Result := -Power
+    ELSE
+      Result := Power;
+  END; { FUNCTION Pow }
+
+// On Changing Decimal Edit
+procedure TForm1.Edit1Change(Sender: TObject);
+var
+  i:integer;
+begin
+
+  ///
+
+
+
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  ex:real;
+begin
+
+
+  //showmessage(floattostr(Power2(2,8)));
+
+end;
+
+procedure TForm1.Rectangle10Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'3';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'3';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle11Click(Sender: TObject);
+begin
+  edit1.Text :='';
+  edit2.Text :='';
+end;
+
+procedure TForm1.Rectangle12Click(Sender: TObject);
+var
+  lengthNum,i,j,h,NumDecimal,NumBinary,num,power :integer;
+  pr:string;
+  //power :real;
+begin
+  if whichOneIsActive='decimal' then begin
+    //
+  end else begin
+
+    if whichOneIsActive='binary' then begin
+
+      lengthNum := length(edit2.Text);
+
+      i:=1;
+      j:= lengthNum-1;
+      num := 0;
+      while i<= lengthNum do begin
+
+        pr := floattostr(power2(2,j));
+        power := strtoint(pr);
+        //showmessage(inttostr(power));
+        num := num + (strtoint(edit2.Text[i]) * power);
+
+        //showmessage(inttostr(num));
+        j:=j-1;
+        i:=i+1;
+
+      end;
+
+
+      edit1.Text:= inttostr(num);
+
+
+    end;
+  end;
+
+end;
+
+procedure TForm1.Rectangle13Click(Sender: TObject);
+begin
+
+
+  if whichOneIsActive='decimal' then begin
+    if edit1.Text<>'' then edit1.Text := edit1.text+'0';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      if edit2.Text<>'' then   edit2.Text := edit2.Text+'0';
+    end;
+  end;
+end;
 
 procedure TForm1.Rectangle16Click(Sender: TObject);
 begin
   Rectangle16.Stroke.Thickness := 7;
   Rectangle18.Stroke.Thickness := 0;
+  whichOneIsActive :='decimal';
 end;
 
 procedure TForm1.Rectangle18Click(Sender: TObject);
 begin
   Rectangle18.Stroke.Thickness := 7;
   Rectangle16.Stroke.Thickness := 0;
+  whichOneIsActive :='binary';
 end;
 
 procedure TForm1.Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
@@ -115,5 +268,93 @@ begin
 end;
 
 
+
+procedure TForm1.Rectangle2Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'7';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'7';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle3Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'8';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'8';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle4Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'9';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'9';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle5Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'4';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'4';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle6Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'5';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'5';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle7Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'6';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'6';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle8Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'1';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'1';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle9Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'2';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'2';
+    end;
+  end;
+end;
 
 end.
