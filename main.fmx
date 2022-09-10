@@ -18,7 +18,7 @@ object Form1: TForm1
     Size.Height = 773.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     TabPosition = None
     Sizes = (
@@ -30,7 +30,7 @@ object Form1: TForm1
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -1797,6 +1797,7 @@ object Form1: TForm1
         object FloatAnimation1: TFloatAnimation
           Enabled = True
           Duration = 1.000000000000000000
+          OnFinish = FloatAnimation1Finish
           PropertyName = 'Opacity'
           StartValue = 0.200000002980232200
           StopValue = 1.000000000000000000
@@ -1804,6 +1805,7 @@ object Form1: TForm1
         object FloatAnimation2: TFloatAnimation
           AutoReverse = True
           Duration = 0.070000000298023220
+          OnFinish = FloatAnimation2Finish
           PropertyName = 'RotationAngle'
           StartValue = 0.000000000000000000
           StopValue = 20.000000000000000000
@@ -1811,6 +1813,7 @@ object Form1: TForm1
         object FloatAnimation3: TFloatAnimation
           AutoReverse = True
           Duration = 0.070000000298023220
+          OnFinish = FloatAnimation3Finish
           PropertyName = 'RotationAngle'
           StartValue = 0.000000000000000000
           StopValue = -20.000000000000000000
@@ -2678,7 +2681,7 @@ object Form1: TForm1
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -2694,6 +2697,7 @@ object Form1: TForm1
         Size.Height = 85.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
+        OnDblClick = Rectangle1DblClick
         OnMouseDown = Rectangle1MouseDown
         object Text2: TText
           Align = Contents
@@ -2830,7 +2834,6 @@ object Form1: TForm1
               Size.PlatformDefault = False
               TextPrompt = '0'
               StyledSettings = [FontColor]
-              OnChange = Edit1Change
             end
           end
           object Rectangle17: TRectangle

@@ -81,7 +81,6 @@ type
       Shift: TShiftState; X, Y: Single);
     procedure Rectangle16Click(Sender: TObject);
     procedure Rectangle18Click(Sender: TObject);
-    procedure Edit1Change(Sender: TObject);
     procedure Rectangle12Click(Sender: TObject);
     procedure Rectangle8Click(Sender: TObject);
     procedure Rectangle9Click(Sender: TObject);
@@ -95,6 +94,10 @@ type
     procedure Rectangle13Click(Sender: TObject);
     procedure Rectangle11Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Rectangle1DblClick(Sender: TObject);
+    procedure FloatAnimation1Finish(Sender: TObject);
+    procedure FloatAnimation2Finish(Sender: TObject);
+    procedure FloatAnimation3Finish(Sender: TObject);
   private
     { Private declarations }
   public
@@ -158,15 +161,20 @@ function Power2(Base, Exponent : Double) : Double;
   END; { FUNCTION Pow }
 
 // On Changing Decimal Edit
-procedure TForm1.Edit1Change(Sender: TObject);
-var
-  i:integer;
+procedure TForm1.FloatAnimation1Finish(Sender: TObject);
 begin
+  floatanimation2.Enabled := true;
+end;
 
-  ///
+procedure TForm1.FloatAnimation2Finish(Sender: TObject);
+begin
+  floatanimation3.Enabled := true;
+end;
 
-
-
+procedure TForm1.FloatAnimation3Finish(Sender: TObject);
+begin
+  sleep(1500);
+  tabcontrol1.TabIndex := 1;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -199,7 +207,7 @@ end;
 procedure TForm1.Rectangle12Click(Sender: TObject);
 var
   lengthNum,i,j,h,NumDecimal,NumBinary,num,power,s,r :integer;
-  pr,q:string;
+  pr,q,dec:string;
   //power :real;
 begin
   if whichOneIsActive='decimal' then begin
@@ -211,9 +219,12 @@ begin
       r := num mod 2;
       num := num div 2;
       q := q + inttostr(r);
-
     end;
-    edit2.Text:= q;
+
+    for i := length(q) downto 1 do begin
+      dec := dec + q[i];
+    end;
+    edit2.Text:= dec;
 
   end else begin
     if whichOneIsActive='binary' then begin
@@ -259,6 +270,11 @@ begin
   Rectangle18.Stroke.Thickness := 7;
   Rectangle16.Stroke.Thickness := 0;
   whichOneIsActive :='binary';
+end;
+
+procedure TForm1.Rectangle1DblClick(Sender: TObject);
+begin
+  application.Terminate;
 end;
 
 procedure TForm1.Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
