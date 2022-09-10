@@ -10,5 +10,6 @@
     <Transaction>2022/09/09 11:51:15.000.722,D:\Github\Android App\main.fmx=D:\Github\Android App\Converter - FMX\main.fmx</Transaction>
     <Transaction>2022/09/09 11:51:15.000.722,D:\Github\Android App\main.pas=D:\Github\Android App\Converter - FMX\main.pas</Transaction>
     <Transaction>2022/09/10 07:45:17.987,D:\Github\Android App\Converter - FMX\Converter.dproj=D:\Github\Android App\Converter - FMX\Project1.dproj</Transaction>
-  </Transactions>
+  </Transactions>  <ActiveMobileDevice>   <NoProfile Android="33006584c0c9a38d"/>
+  </ActiveMobileDevice>
 </BorlandProject>
