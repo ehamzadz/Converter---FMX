@@ -1,0 +1,103 @@
+unit main;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.TabControl,
+  FMX.Objects, FMX.Ani, FMX.Layouts;
+
+type
+  TForm1 = class(TForm)
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    Image1: TImage;
+    Image2: TImage;
+    Text1: TText;
+    FloatAnimation1: TFloatAnimation;
+    FloatAnimation2: TFloatAnimation;
+    FloatAnimation3: TFloatAnimation;
+    GridPanelLayout1: TGridPanelLayout;
+    GridPanelLayout2: TGridPanelLayout;
+    GridPanelLayout3: TGridPanelLayout;
+    GridPanelLayout4: TGridPanelLayout;
+    GridPanelLayout5: TGridPanelLayout;
+    GridPanelLayout6: TGridPanelLayout;
+    Rectangle1: TRectangle;
+    Text2: TText;
+    Rectangle2: TRectangle;
+    Brush1: TBrushObject;
+    Text3: TText;
+    ColorAnimation1: TColorAnimation;
+    Rectangle3: TRectangle;
+    Text4: TText;
+    ColorAnimation3: TColorAnimation;
+    Rectangle4: TRectangle;
+    Text5: TText;
+    ColorAnimation5: TColorAnimation;
+    Rectangle5: TRectangle;
+    Text6: TText;
+    ColorAnimation7: TColorAnimation;
+    Rectangle6: TRectangle;
+    Text7: TText;
+    ColorAnimation10: TColorAnimation;
+    Rectangle7: TRectangle;
+    Text8: TText;
+    ColorAnimation11: TColorAnimation;
+    Rectangle8: TRectangle;
+    Text9: TText;
+    ColorAnimation13: TColorAnimation;
+    Rectangle9: TRectangle;
+    Text10: TText;
+    ColorAnimation15: TColorAnimation;
+    Rectangle10: TRectangle;
+    Text11: TText;
+    ColorAnimation17: TColorAnimation;
+    procedure FloatAnimation1Finish(Sender: TObject);
+    procedure FloatAnimation2Finish(Sender: TObject);
+    procedure Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Rectangle2Click(Sender: TObject);
+    procedure ColorAnimation2Finish(Sender: TObject);
+    procedure ColorAnimation18Finish(Sender: TObject);
+    procedure Rectangle10Click(Sender: TObject);
+    procedure Rectangle4Click(Sender: TObject);
+    procedure ColorAnimation6Finish(Sender: TObject);
+    procedure ColorAnimation4Finish(Sender: TObject);
+    procedure Rectangle3Click(Sender: TObject);
+    procedure ColorAnimation8Finish(Sender: TObject);
+    procedure Rectangle5Click(Sender: TObject);
+    procedure ColorAnimation9Finish(Sender: TObject);
+    procedure Rectangle6Click(Sender: TObject);
+    procedure Rectangle7Click(Sender: TObject);
+    procedure ColorAnimation12Finish(Sender: TObject);
+    procedure ColorAnimation14Finish(Sender: TObject);
+    procedure Rectangle8Click(Sender: TObject);
+    procedure ColorAnimation16Finish(Sender: TObject);
+    procedure Rectangle9Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.fmx}
+
+
+
+
+procedure TForm1.Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+
+
+end.

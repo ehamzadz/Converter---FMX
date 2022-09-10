@@ -3,26 +3,28 @@ object Form1: TForm1
   Top = 0
   BorderStyle = None
   Caption = 'Form1'
-  ClientHeight = 800
+  ClientHeight = 773
   ClientWidth = 375
   Position = DesktopCenter
+  StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   object TabControl1: TTabControl
     Align = Contents
     Size.Width = 375.000000000000000000
-    Size.Height = 800.000000000000000000
+    Size.Height = 773.000000000000000000
     Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
     TabIndex = 1
     TabOrder = 0
     TabPosition = None
     Sizes = (
       375s
-      800s
+      773s
       375s
-      800s)
+      773s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
@@ -1790,7 +1792,6 @@ object Form1: TForm1
         object FloatAnimation1: TFloatAnimation
           Enabled = True
           Duration = 1.000000000000000000
-          OnFinish = FloatAnimation1Finish
           PropertyName = 'Opacity'
           StartValue = 0.200000002980232200
           StopValue = 1.000000000000000000
@@ -1798,7 +1799,6 @@ object Form1: TForm1
         object FloatAnimation2: TFloatAnimation
           AutoReverse = True
           Duration = 0.070000000298023220
-          OnFinish = FloatAnimation2Finish
           PropertyName = 'RotationAngle'
           StartValue = 0.000000000000000000
           StopValue = 20.000000000000000000
@@ -2651,7 +2651,7 @@ object Form1: TForm1
         Align = Bottom
         HitTest = False
         Margins.Bottom = 50.000000000000000000
-        Position.Y = 726.000000000000000000
+        Position.Y = 699.000000000000000000
         Size.Width = 375.000000000000000000
         Size.Height = 24.000000000000000000
         Size.PlatformDefault = False
@@ -2659,7 +2659,7 @@ object Form1: TForm1
       object Text1: TText
         Align = Bottom
         HitTest = False
-        Position.Y = 700.000000000000000000
+        Position.Y = 673.000000000000000000
         Size.Width = 375.000000000000000000
         Size.Height = 26.000000000000000000
         Size.PlatformDefault = False
@@ -2681,442 +2681,1061 @@ object Form1: TForm1
       Text = 'TabItem2'
       ExplicitSize.cx = 8.000000000000000000
       ExplicitSize.cy = 8.000000000000000000
-      object GridPanelLayout1: TGridPanelLayout
-        Align = Bottom
-        Position.Y = 425.000000000000000000
-        Size.Width = 375.000000000000000000
-        Size.Height = 375.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 0
-        ColumnCollection = <
-          item
-            Value = 25.000000000000000000
-          end
-          item
-            Value = 75.000000000000000000
-          end>
-        ControlCollection = <
-          item
-            Column = 0
-            Control = GridPanelLayout2
-            Row = 0
-          end
-          item
-            Column = 1
-            Control = GridPanelLayout3
-            Row = 0
-          end>
-        RowCollection = <
-          item
-            Value = 100.000000000000000000
-          end>
-        object GridPanelLayout2: TGridPanelLayout
-          Align = Client
-          Size.Width = 93.750000000000000000
-          Size.Height = 375.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 0
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <>
-          RowCollection = <
-            item
-              Value = 50.000000000000000000
-            end
-            item
-              Value = 50.000000000000000000
-            end>
-        end
-        object GridPanelLayout3: TGridPanelLayout
-          Align = Client
-          Size.Width = 281.250000000000000000
-          Size.Height = 375.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 1
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = GridPanelLayout4
-              Row = 0
-            end
-            item
-              Column = 0
-              Control = GridPanelLayout5
-              Row = 1
-            end>
-          RowCollection = <
-            item
-              Value = 75.000000000000000000
-            end
-            item
-              Value = 25.000000000000000000
-            end>
-          object GridPanelLayout4: TGridPanelLayout
-            Align = Client
-            Size.Width = 281.250000000000000000
-            Size.Height = 281.250000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 0
-            ColumnCollection = <
-              item
-                Value = 33.333335000000080000
-              end
-              item
-                Value = 33.333333333333310000
-              end
-              item
-                Value = 33.333331666666620000
-              end>
-            ControlCollection = <
-              item
-                Column = 0
-                Control = Rectangle2
-                Row = 0
-              end
-              item
-                Column = 1
-                Control = Rectangle3
-                Row = 0
-              end
-              item
-                Column = 2
-                Control = Rectangle4
-                Row = 0
-              end
-              item
-                Column = 0
-                Control = Rectangle5
-                Row = 1
-              end
-              item
-                Column = 1
-                Control = Rectangle6
-                Row = 1
-              end
-              item
-                Column = 2
-                Control = Rectangle7
-                Row = 1
-              end
-              item
-                Column = 0
-                Control = Rectangle8
-                Row = 2
-              end
-              item
-                Column = 1
-                Control = Rectangle9
-                Row = 2
-              end
-              item
-                Column = 2
-                Control = Rectangle10
-                Row = 2
-              end>
-            RowCollection = <
-              item
-                Value = 33.333335000000080000
-              end
-              item
-                Value = 33.333333333333310000
-              end
-              item
-                Value = 33.333331666666620000
-              end>
-            object Rectangle2: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.750007629394530000
-              Size.Height = 91.750007629394530000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text3: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '7'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle3: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.749992370605470000
-              Size.Height = 91.750007629394530000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text4: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '8'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle4: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.750000000000000000
-              Size.Height = 91.750007629394530000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text5: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '9'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle5: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.750007629394530000
-              Size.Height = 91.749992370605470000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text6: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '4'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle6: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.749992370605470000
-              Size.Height = 91.749992370605470000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text7: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '5'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle7: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.750000000000000000
-              Size.Height = 91.749992370605470000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text8: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '6'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle8: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.750007629394530000
-              Size.Height = 91.750000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text9: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '1'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle9: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.749992370605470000
-              Size.Height = 91.750000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text10: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '2'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-            object Rectangle10: TRectangle
-              Align = Client
-              Cursor = crHandPoint
-              Fill.Color = xFFD9E6F0
-              Margins.Left = 1.000000000000000000
-              Margins.Top = 1.000000000000000000
-              Margins.Right = 1.000000000000000000
-              Margins.Bottom = 1.000000000000000000
-              Size.Width = 91.750000000000000000
-              Size.Height = 91.750000000000000000
-              Size.PlatformDefault = False
-              Stroke.Kind = None
-              object Text11: TText
-                Align = Center
-                HitTest = False
-                Margins.Left = 2.000000000000000000
-                Size.Width = 92.000000000000000000
-                Size.Height = 57.000000000000000000
-                Size.PlatformDefault = False
-                Text = '3'
-                TextSettings.Font.Family = 'Tajawal'
-                TextSettings.Font.Size = 34.000000000000000000
-                TextSettings.Font.StyleExt = {00050000000000000004000000}
-              end
-            end
-          end
-          object GridPanelLayout5: TGridPanelLayout
-            Align = Client
-            Size.Width = 281.250000000000000000
-            Size.Height = 93.750000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 1
-            ColumnCollection = <
-              item
-                Value = 66.666670000000000000
-              end
-              item
-                Value = 33.333330000000000000
-              end>
-            ControlCollection = <>
-            RowCollection = <
-              item
-                Value = 100.000000000000000000
-              end>
-          end
-        end
-      end
-      object GridPanelLayout6: TGridPanelLayout
-        Align = Client
-        Size.Width = 375.000000000000000000
-        Size.Height = 336.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 1
-        ColumnCollection = <
-          item
-            Value = 25.000000000000000000
-          end
-          item
-            Value = 75.000000000000000000
-          end>
-        ControlCollection = <>
-        RowCollection = <
-          item
-            Value = 50.000000000000000000
-          end
-          item
-            Value = 50.000000000000000000
-          end>
-      end
       object Rectangle1: TRectangle
         Align = Top
         Fill.Color = xFF72ABD4
         Size.Width = 375.000000000000000000
-        Size.Height = 89.000000000000000000
+        Size.Height = 85.000000000000000000
         Size.PlatformDefault = False
         Stroke.Kind = None
+        OnMouseDown = Rectangle1MouseDown
         object Text2: TText
           Align = Client
-          Margins.Left = 25.000000000000000000
-          Size.Width = 350.000000000000000000
-          Size.Height = 89.000000000000000000
+          HitTest = False
+          Size.Width = 375.000000000000000000
+          Size.Height = 85.000000000000000000
           Size.PlatformDefault = False
           Text = 'Converter'
           TextSettings.Font.Family = 'Tajawal'
           TextSettings.Font.Size = 24.000000000000000000
           TextSettings.Font.StyleExt = {00050000000000000004000000}
           TextSettings.FontColor = claWhite
-          TextSettings.HorzAlign = Leading
+        end
+      end
+      object GridPanelLayout7: TGridPanelLayout
+        Align = Client
+        Size.Width = 375.000000000000000000
+        Size.Height = 688.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ColumnCollection = <
+          item
+            Value = 100.000000000000000000
+          end>
+        ControlCollection = <
+          item
+            Column = 0
+            Control = GridPanelLayout6
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = GridPanelLayout1
+            Row = 1
+          end>
+        RowCollection = <
+          item
+            Value = 49.999853611421020000
+          end
+          item
+            Value = 50.000146388578980000
+          end>
+        object GridPanelLayout6: TGridPanelLayout
+          Align = Client
+          Anchors = []
+          Size.Width = 375.000000000000000000
+          Size.Height = 343.998992919921900000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 25.000000000000000000
+            end
+            item
+              Value = 75.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Rectangle15
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = Rectangle16
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Rectangle17
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = Rectangle18
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          object Rectangle15: TRectangle
+            Align = Client
+            Fill.Color = claAliceblue
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Size.Width = 91.750000000000000000
+            Size.Height = 169.999496459960900000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Text16: TText
+              Align = Center
+              HitTest = False
+              Margins.Left = 2.000000000000000000
+              Size.Width = 92.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'DEC'
+              TextSettings.Font.Family = 'Tajawal'
+              TextSettings.Font.Size = 25.000000000000000000
+            end
+          end
+          object Rectangle16: TRectangle
+            Align = Client
+            Cursor = crHandPoint
+            Fill.Color = claAliceblue
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Sides = [Right]
+            Size.Width = 279.250000000000000000
+            Size.Height = 169.999496459960900000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF72ABD4
+            Stroke.Thickness = 0.000000000000000000
+            OnClick = Rectangle16Click
+            object Edit1: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Text = '123'
+              TextSettings.Font.Family = 'Tajawal'
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.HorzAlign = Center
+              HitTest = False
+              Size.Width = 279.250000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [FontColor]
+            end
+          end
+          object Rectangle17: TRectangle
+            Align = Client
+            Fill.Color = claAliceblue
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Size.Width = 91.750000000000000000
+            Size.Height = 169.999496459960900000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Text18: TText
+              Align = Center
+              HitTest = False
+              Margins.Left = 2.000000000000000000
+              Size.Width = 92.000000000000000000
+              Size.Height = 57.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'BIN'
+              TextSettings.Font.Family = 'Tajawal'
+              TextSettings.Font.Size = 25.000000000000000000
+            end
+          end
+          object Rectangle18: TRectangle
+            Align = Client
+            Cursor = crHandPoint
+            Fill.Color = claAliceblue
+            Margins.Left = 1.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 1.000000000000000000
+            Margins.Bottom = 1.000000000000000000
+            Sides = [Right]
+            Size.Width = 279.250000000000000000
+            Size.Height = 169.999496459960900000
+            Size.PlatformDefault = False
+            Stroke.Color = xFF72ABD4
+            Stroke.Thickness = 0.000000000000000000
+            OnClick = Rectangle18Click
+            object Edit2: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Client
+              TabOrder = 0
+              Text = '11101'
+              TextSettings.Font.Family = 'Tajawal'
+              TextSettings.Font.Size = 24.000000000000000000
+              TextSettings.HorzAlign = Center
+              HitTest = False
+              Size.Width = 279.250000000000000000
+              Size.Height = 32.000000000000000000
+              Size.PlatformDefault = False
+              StyledSettings = [FontColor]
+            end
+          end
+        end
+        object GridPanelLayout1: TGridPanelLayout
+          Align = Client
+          Size.Width = 375.000000000000000000
+          Size.Height = 344.001007080078100000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ColumnCollection = <
+            item
+              Value = 75.000000530042530000
+            end
+            item
+              Value = 24.999999469957480000
+            end>
+          ControlCollection = <
+            item
+              Column = 1
+              Control = GridPanelLayout2
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = GridPanelLayout3
+              Row = 0
+            end>
+          RowCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          object GridPanelLayout2: TGridPanelLayout
+            Align = Client
+            Size.Width = 93.750000000000000000
+            Size.Height = 344.001007080078100000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            ColumnCollection = <
+              item
+                Value = 100.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = Rectangle11
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = Rectangle12
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 50.000000000000000000
+              end
+              item
+                Value = 50.000000000000000000
+              end>
+            object Rectangle11: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750000000000000000
+              Size.Height = 170.000503540039100000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Text12: TText
+                Align = Center
+                HitTest = False
+                Margins.Left = 2.000000000000000000
+                Size.Width = 92.000000000000000000
+                Size.Height = 57.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'C'
+                TextSettings.Font.Family = 'Tajawal'
+                TextSettings.Font.Size = 30.000000000000000000
+              end
+              object ColorAnimation2: TColorAnimation
+                Duration = 0.200000002980232200
+                PropertyName = 'Fill.Color'
+                StartValue = xFFD9E6F0
+                StopValue = xFFBBD3E5
+                Trigger = 'IsMouseOver=true'
+                TriggerInverse = 'IsMouseOver=false'
+              end
+            end
+            object Rectangle12: TRectangle
+              Align = Client
+              Cursor = crHandPoint
+              Fill.Color = xFFD9E6F0
+              Margins.Left = 1.000000000000000000
+              Margins.Top = 1.000000000000000000
+              Margins.Right = 1.000000000000000000
+              Margins.Bottom = 1.000000000000000000
+              Size.Width = 91.750000000000000000
+              Size.Height = 170.000503540039100000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object ColorAnimation4: TColorAnimation
+                Duration = 0.200000002980232200
+                PropertyName = 'Fill.Color'
+                StartValue = xFFD9E6F0
+                StopValue = xFFBBD3E5
+                Trigger = 'IsMouseOver=true'
+                TriggerInverse = 'IsMouseOver=false'
+              end
+              object Image3: TImage
+                MultiResBitmap.Height = 512
+                MultiResBitmap.Width = 512
+                MultiResBitmap = <
+                  item
+                    Width = 512
+                    Height = 512
+                    PNG = {
+                      89504E470D0A1A0A0000000D4948445200000200000002000806000000F478D4
+                      FA000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                      1E4649444154785EEDDD7BD0AE6B5DD0F1256072861A54B60772CA1388A31827
+                      B50399EC0172AC349D014165D2626C464C29A7BFC0991481C66A1AA766B20387
+                      0E64A31588309295222269096120A5D5004A121220E070B2DFF5ACF56CD67EF7
+                      EF5DEFE9BE7FF7755DF7E733F39DB59EC562B378EE7B5FD7B5DEE7797FCF3500
+                      0000000000000000000000000000000000000000000000000000000000000000
+                      0000000000000000000000000000000000000000000000000000000000000000
+                      0000000000000000000000000000000000000000000000000000000000000000
+                      000000000000000000000000000000000000000000000000000000000080857C
+                      D28D1FA127F788FE70F4F0E8A1377EFCD4E80137BA5F74FFE85E11C0563E1C7D
+                      207A4FF43B377EFEB6E857A3B7446FBDD1FBA2EE3800D083B6E17F65F484E8F1
+                      51DBF03F250218DDC7A337463F7DA39F89DE1F6DCE0180ADDC37FA86E86BA2AF
+                      8EDADFE80166F7D1E835D18BA37F156DF6D5010700AAB5BFDD3F237A5A64D307
+                      F6EC43D1BF8E5E14BD2AFABDA88C030015DA7DF6F5D133A33FDA7E01803B692F
+                      13FC40F4A3517BD960750E00ACEDABA2E7458F3C3C02E056DA9B069F1BB59708
+                      3ED67E612D0E00ACE561D173A2F63A3F0017F3CBD177443F7F78B482BBDFF811
+                      9672CFE8F9D10BA3F67A3F0017F7E0E8E9D16744AF8DDAFB0516E52B002CE94B
+                      A397445F747804C012DE157D6BF48AC3A385F80A004B6807C9F606BF9746B7B5
+                      5F006031F7899E12FD81E8DF458BBC49D05700B8AAF6AD7CED5DABB71F1E01B0
+                      A69F8B9E1CB5898357E200C055B4D7A65E1E3DE2F008800AEF8C9E14FD97C3A3
+                      4BBADB8D1FE1A2DA1BFCDABB536DFE00B5DA1B04DB48E1363AFDD21C00B88CF6
+                      BDFDEDCB500F393C02A05A1BA7FEB2E8EB0E8F2EC14B005CD4A3A2F68116EDE6
+                      03605B6D58D037463F767874010E005CC4E746ED432C3EFDF008801EB48F256E
+                      1FACF6538747E7E400C0797D66D436FFCF393C02A027ED53051F179DFB8D810E
+                      009CC703A3B6F91BF003D0AFF6DD01ED65DAB71F1E9DC19B00394BBB474CF703
+                      E85FFBEE803697E5930F8FCE601220677941F42DD77F0A40E73E2B6A07803631
+                      F096BC04C0AD3C2D7AD1F59F023088DF8BFE6CF46F0F8F4EE100C0691E13FD87
+                      A87DBA1F0063F9ADE8A1D16F1F1E25BC0440A67DA0CFABA3F6C113008CA77D80
+                      D003A29F383C4AF80A0027B5BFF1B7BFF9B7AF000030AEF6A9815F11FDC2E1D1
+                      09BE0B80937E38B2F9038CAFEDF16D4D4FBFDAEF25006EF6ACE87BAFFF148009
+                      B44F6DFDB5E80D874737F1120047EDF3FC5F11391402CCE52D519BE5D25E12B8
+                      83C59EE60BA25745F73E3C0260260F8A7E25FA6F874737F80A00F78FDAE7FA3F
+                      ECF0088019B597001E11B5190107DE04B86FED2B402F8D6CFE0073FB92E8F1D7
+                      7F7A9D03C0BE3D2F7AC2F59F0230B96FBEF1E3819700F6CB985F807DF950D406
+                      BDBDF7F0885D6ADFE7DF6E84F65AD008B53F6B9B66F59DD19F883E3DBA5704B0
+                      A5F6A13B9F1AB58FE0FDF6E89F47ED73F9B375AC979E1EB153ED7B42DF116537
+                      466FB559D67F356AEF60051841FB6EAA6F8BFE7B94AD6B5B77E6A70432A736E6
+                      B78D84CC6E8A9EFA58F443D1FD228011B5AF0EB4C16ABF1B65EBDC567D38BA6F
+                      C4CEB4D7FCB31BA2A7DE1DFDA90860065F1EFD6694AD775BF5C4881D69637EB3
+                      1BA1A7DE1E7D61043093CF8EDE1865EBDE16BD206227DA69EFA3517623F452FB
+                      CCEA874700336A87805EBE12F04B113BD0C6FCBE27CA6E825EFA4874A7011500
+                      136A2F07F4F09E80F63E2BEF0398DC03A3F62110D90DD053CF8C00F6E0D951B6
+                      0E56F76511936A531E5F1E6517BEA7FE4904B017ED6FDE3DBC14F0E48849B537
+                      796417BDA77E2EFA9408604FBE23CAD6C4CA9E1331A136E637BBE03DD58611B5
+                      A144007B739FE8FD51B63656D5A61632994747BD8FF9FD60F4472280BD6A9FC4
+                      9AAD8F55BDC6A701CEA5FD8DFAC7A336F1AF57EDC6FB0B916F4301F66CEB91BC
+                      26AD4EA46DFAAF8B4E9EF27AEBFB2380BD7B6C94AD9155FD7AC4244618F3FBB2
+                      C8579D00AE5DFBB4285B27AB7A57C404DA27E66517B8A7DE1C3D2002E0FA7740
+                      656B65556D201183BB3D1A61CCEFE746007C42B65E56C6C04618F3DB0E273E79
+                      0AE0AEB235B3320675FFE857A2ECA2F69431BF00B96CCDAC8C018D32E6F78511
+                      00B96CDDAC8C01FDCD28BB983DF5DAC8985F80D3656B67650CC6985F803964EB
+                      67650CA47D7C631BA39B5DC85E6A63881F1501706BD91A5A1983B82D7A5B945D
+                      C45EFA78E4232601CE275B472B6300C6FC02CC275B472B6300FF30CA2E5E4FFD
+                      6474F70880F3C9D6D2CAE89C31BF0073CAD6D3CAE8D828637E3F2F02E062B235
+                      B5323A65CC2FC0DCB275B5323A64CC2FC0FCB275B5323A63CC2FC03E646B6B65
+                      74C6985F807DC8D6D7CAE88831BF00FB91ADB195D109637E01F6255B672BA303
+                      0F8E8CF905D8976CADAD8C8D8D32E6F70722009693ADB595B131637E01F6295B
+                      6F2B6343C6FC02EC57B6E656C6468CF905D8B76CDDAD8C0D18F30B40B6F65646
+                      31637E0168B2B5B7320A19F30BC051B6FE564621637E0138CAD6E0CA28F2D428
+                      BB003DD5C6FC7E6604C0FAB275B8320AB431BF1F88B20BD04BC6FC02D4CAD6E2
+                      CA58D928637E9F120150275B8F2B6345C6FC02709A6C3DAE8C1519F30BC069B2
+                      35B9325662CC2F00B792ADCB95B102637E01384BB63657C6C23E3F32E61780B3
+                      64EB73652CC8985F00CE2B5B9F2B6321C6FC027011D91A5D190B7941943DC13D
+                      65CC2F403FB275BA321660CC2F001795ADD5957145C6FC027019D97A5D195760
+                      CC2F009795ADD9957149C6FC027015D99A5D199764CC2F005791ADDB957109CF
+                      8AB227B3A78CF905E85BB67657C60519F30BC012B2F5BB322EC0985F009692AD
+                      E195714EC6FC02B0A46C0DAF8C7330E61780A565EB78659C8331BF002C2D5BCB
+                      2BE30CC6FC02B0866C3DAF8C5B30E61780B5646B7A659CC2985F00D694ADEB95
+                      9130E69735DC76E347388D7B645FB275BD32123F12654F564FBD3232E6771CCF
+                      89DA0C092FD7709A2F8DFE6FF4838747EC41B6B657C609C6FCB2B4B6F91FAF9D
+                      430099E3E67FBC4F1C02F6E178BDB78A9B18F3CBD26EDEFC8F390470B3939BFF
+                      318780F99DBCE6D5718331BF2C2DDBFC8F3904D09CB6F91F7308985B76CD2B23
+                      18F3CBD26EB5F91F7308D8B7B336FF630E01F3CAAE7765BB67CC2F4B3BCFE67F
+                      CC21609FCEBBF91F7308985376AD2BDB3D637E59D24536FF630E01FB72D1CDFF
+                      9843C07CB2EB5CD9AE8D30E6F73722637EC77099CDFF9843C03E5C76F33FE610
+                      3097EC1A57B65BA38CF97D7444FFAEB2F91F730898DB5537FF630E01F3C8AE6F
+                      65BB64CC2F4B5A62F33FE61030A7A536FF630E0173C8AE6D65BB63CC2F4B5A72
+                      F33FE6103097A537FF630E01E3CBAE6B65BB63CC2F4B5963F33FE6103087B536
+                      FF630E0163CBAE6965BB62CC2F4B5973F33FE61030B6B537FF630E01E3CAAE67
+                      65BB61CC2F4BA9D8FC8F39048CA96AF33FE61030A6EC5A56B60BC6FCB294CACD
+                      FF9843C058AA37FF630E01E3C9AE6365D3BB5F64CC2F4BD862F33FE6103086AD
+                      36FF630E0163C9AE6165536B637E5F1665FFC77BCA98DFFE6DB9F91F7308E8DB
+                      D69BFF3187807164D7AFB2A919F3CB127AD8FC8F3904F4A997CDFF9843C018B2
+                      6B57D9B48CF965093D6DFEC71C02FAD2DBE67FCC21A07FD975AB6C4AC6FCB284
+                      1E37FF630E017DE875F33FE610D0B7EC9A55361D637E5942CF9BFF3187806DF5
+                      BEF91F7308E85776BD2A9B8A31BF2C6184CDFF9843C03646D9FC8F3904F429BB
+                      56954DC5985FAEEAB6E8DD5176ED7AADFD79DBCB5ED468CFF588F748BBB7E94B
+                      76AD2A9BC608637EDF1219F3DBBFD1FE76D7F295801AEE0D96945DAFCAA6F0F8
+                      C8985F9664A1E724F7044BCBAE5965C333E697B558F039722FB086ECBA5536B4
+                      51C6FC7E57C4982CFCB807584B76ED2A1B9631BF54B101EC976BCF9AB2EB57D9
+                      B08CF9A5928D607F5C73D6965DC3CA8664CC2F5BB021EC876B4D85EC3A56361C
+                      637ED9928D617EAE3155B26B59D9508CF9A507368879B9B654CAAE6765C31865
+                      CCEF7323E667A3988F6B4AB5EC9A56360C637EE98D0D631EAE255BC8AE6B6543
+                      30E6975ED938C6E71AB295ECDA56D63D637EE99D0D645CAE1D5BCAAE6F655D33
+                      E69751D848C6E39AB1B5EC1A57D62D637E198D0D651CAE153DC8AE73655D32E6
+                      9751D958FAE71AD18BEC5A57D625637E19990DA65FAE0D3DC9AE7765DD31E697
+                      19D868FAE39AD09BEC9A57D615637E99890DA71FAE053DCAAE7B65DD30E69719
+                      D978B6E71AD0ABECDA57D68536E6F7E7A3EC0FD853C6FC721936A0ED78EEE959
+                      76FD2BEB8231BFCCCE4654CF734EEFB27BA0B2CD19F3CB5ED890EA78AE194176
+                      1F54B629637ED91B1BD3FA3CC78C22BB172ADB8C31BFEC950D6A3D9E5B4692DD
+                      0F956DC2985FF6CE46B53CCF29A3C9EE89CACA19F30BD7D9B096E3B96444D97D
+                      515939637EE1136C5C57E7396454D9BD515929637EE1AE6C6097E7B96364D9FD
+                      515919637EE17436B28BF39C31BAEC1EA9AC8431BF70361BDAF979AE9841769F
+                      54B63A637EE1FC6C6C67F31C318BEC5EA96C75C6FCC2C5D8E04EE7B96126D9FD
+                      52D9AA8CF985CBB1D1DD95E784D964F74C65AB31E617AEC686F7099E0B6694DD
+                      3795AD629431BF4F8AA067363ECF01F3CAEE9DCA16D7C6FCBE29CAFEC77ACA98
+                      5F46B1E70DD0E6CFCCB2FBA7B24519F30BEBD8E34668F36776D93D54D9A29E1F
+                      65FF233D65CC2FA3DAD38668F3670FB2FBA8B2C518F30BEBDBC3C668F3672FB2
+                      7BA9B24518F30B7566DE206DFEEC49763F557665C6FC42BD19374A9B3F7B93DD
+                      53955D8931BFB09D99364C9B3F7B94DD57955D8931BFB0AD19364E9B3F7B95DD
+                      5B955DDAF744D93FB0A7DA98DF074630B39137509B3F7B96DD5F955D4A1BF3FB
+                      9128FB07F69231BFEC497B23EEBBA3ECDF855E6B7FDE11FFCCEDB9862564F758
+                      651766CC2FF469C4BF4D8F94BFF9B3B4EC3EABEC428CF985BE3904AC93CD9F35
+                      64F75A65E766CC2F8CC12160D96CFEAC25BBDF2A3B37637E611C0E01CB64F367
+                      4DD93D57D9B918F30BE37108B85A367FD696DD77959DC9985F189743C0E5B2F9
+                      5321BBF72ABBA511C6FCB68CF985D339045C2C9B3F55B2FBAFB25319F30BF370
+                      08385F367F2A65F76065A732E617E6E21070EB6CFE54CBEEC3CA52C6FCC29C1C
+                      02F26CFE6C21BB172BBB0B637E616E0E0177CEE6CF56B2FBB1B23B699B6AFB97
+                      21FB8DBDD4C6FCDE1E0197E710703D9B3F5BCAEEC9CAEE708FE8F551F69B7ACA
+                      985F58C6DE0F01367FB696DD9795DDE1FBA2EC37F4D48B2260397B3D04D8FCE9
+                      41766F5676F039D187A3EC37F452FB9644637E61797B3B04D8FCE945767F5676
+                      F0B7A3EC3FEC25637E615D7B3904D8FCE949768F5676EDFED1FB6EFA85DEFA60
+                      E45F5858DFEC87009B3FBDC9EED3CAAEFD9913BFD05BC6FC429D590F01367F7A
+                      94DDAB955DFB3B277EA1A78CF9857AB31D026CFEF42ABB5F2BBBF6BA13BFD04B
+                      3F11DD2D02EACD7208B0F9D3B3EC9EADECDAFF3EF10B3D64CC2F6C6FF44380CD
+                      9FDE65F76D65DD7DD6BF31BFD08F510F01367F4690DDBB65F5F825F6F6E97E9F
+                      7CFDA700C05AFE67949E0E36CC4B00B03D2F01C0BAB2FBB6326F0204EEC29B00
+                      617DD93D5B59D753007F30026ACDB2F91F7308A057D9FD5AD9B5AF3DF10BBDF5
+                      F408A831DBE67FCC21801E65F76A65D7EE1719050CCCBAF91F7308A037D97D5A
+                      D9C10F45D97FD84B3E0C08D635FBE67FCC21809E64F76865077F30F271C0B04F
+                      7BD9FC8F3904D08BECFEACEC0ECF8EB2DFD0532F8A80E5EC6DF33FE610400FB2
+                      7BB3B23BDC237A7D94FDA69EFA2B1170757BDDFC8F3904B0B5ECBEACEC4EDA08
+                      DEF62F45F61B7BE9A3D1ED1170797BDFFC8F3904B0A5EC9EACEC2E1E1F7D24CA
+                      7E732FBD377A58045C9CCDFFCE3904B095EC7EAC2CF5DD51F69B7BCAB860B838
+                      9B7F9E43005BC8EEC5CA4EF50FA2ECBFD053AF8CDA87070167B3F9DF3A8700AA
+                      65F76165A76ADF72D7BEF52EFB2FF59471C170369BFFF97208A052760F56764B
+                      0F8EDE1665FFC59E322E184E67F3BF580E0154C9EEBFCACEF465D107A2ECBFDC
+                      4B1F8A1E1D017766F3BF5C0E0154C8EEBDCACEE59BA2ECBFDC53C605C39DD9FC
+                      AF9643006BCBEEBBCACEED7951F60FE8A95F8CEE15C1DED9FC97C921803565F7
+                      5C65E776B7E86551F60FE929E382D93B9BFFB23904B096EC7EABEC42DA4707BF
+                      29CAFE413D655C307B65F35F278700D690DD6B955DD8E747BF1D65FFB05E6AE3
+                      829F14C19ED8FCD7CD2180A565F7596597625C30F4A57DB7CEBBA3ECDF855E6B
+                      7FDE11FFCCEDB9862564F7586597665C30F461C4BFF91FFF363DF29F1DAE2ABB
+                      BF2ABB12E382615B336CA00E01EC55766F557625C605C37666DA381D02D8A3EC
+                      BEAAECCA8C0B867A336E980E01EC4D764F55B608E382A1CECC1BA543007B92DD
+                      4F952DC6B86058DF1E36488700F622BB972A5B9471C1B09E3D6D8C0E01EC4176
+                      1F55B628E382611D7BDC101D02985D760F55B638E38261597BDE081D02985976
+                      FF54B60AE38261193640CF01F3CAEE9DCA5633C2B8E07648F9BC087A64E3FB04
+                      CF0533CAEE9BCA56655C305C8E0DEFAE3C27CC26BB672A5BDD8F44D9FF704F19
+                      174C4F6C74A7F3DC3093EC7EA96C75F78C8C0B86F3B1C19DCD73C42CB27BA5B2
+                      12A38C0B6EC38C602B36B6F3F35C3183EC3EA9AC8C71C1703A1BDAC579CE185D
+                      768F5456CAB860B82B1BD9E579EE1859767F54566E8471C1ED3D0BEDA38E616D
+                      36B0ABF31C32AAECDEA8AC9C71C1709D8D6B399E4B4694DD17956DC2B860F6CE
+                      86B53CCF29A3C9EE89CA36635C307B65A35A8FE7969164F743659B322E98BDB1
+                      41ADCF73CC28B27BA1B2CD7D4F94FDC17ACAB860966063AAE3B96604D97D5059
+                      178C0B667636A47A9E737A97DD039575C1B860666623DA8EE79E9E65D7BFB26E
+                      1817CC8C6C40DB730DE85576ED2BEB8A71C1CCC4C6D30FD7821E65D7BDB2EE18
+                      17CC0C6C38FD714DE84D76CD2BEB9271C18CCC46D32FD7869E64D7BBB22E1917
+                      CCA86C30FD738DE84576AD2BEB9671C18CC6C6320ED78A1E64D7B9B2AE1917CC
+                      286C28E371CDD85A768D2BEB9E71C1F4CE46322ED78E2D65D7B7B22118174CAF
+                      6C20E3730DD94A766D2B1B8671C1F4C6C6310FD7922D64D7B5B26118174C4F6C
+                      18F3714DA9965DD3CA86625C303DB051CCCBB5A552763D2B1B8E71C16CC90631
+                      3FD7982AD9B5AC6C48C605B3051BC37EB8D654C8AE6365C37A7E94FD1FEA29E3
+                      82E76143D81FD79CB565D7B0B26119174C151BC17EB9F6AC29BB7E950DCDB860
+                      D66603C03DC05AB26B57D9F08C0B662D167E8EDC0BAC21BB6E954DC1B8609666
+                      C1E724F7044BCBAE5965D3302E98A558E8398D7B832565D7ABB2A91817CC55DD
+                      16BD3BCAAE5DAFB53F6F9B8F418DF65C8F788FB47B9BBE64D7AAB2A91817CC12
+                      BE37CAAE5B8FF9DBDD3646FB4AC0B323FA935DABCAA6635C304B18E11060F3DF
+                      D62887009B7FBFB2EB55D9948C0B66093D1F026CFE7DE8FD1060F3EF5B76CD2A
+                      9BD653A3ECFF704F1917DCBF1E0F0136FFBEF47A08B0F9F72FBB6E954D6D8471
+                      C1AF8D8C0BEE5B4F87009B7F9F7A3B04D8FCC7905DBBCAA6665C304BE9E11060
+                      F3EF5B2F87009BFF38B2EB57D9F48C0B66295B1E026CFE63D8FA1060F31F4B76
+                      0D2BDB05E38259CA1687009BFF58B63A04D8FCC7935DC7CA76C3B86096527908
+                      B0F98FA9FA1060F31F53762D2BDB15E382594AC521C0E63FB6AA4380CD7F5CD9
+                      F5AC6C778C0B66296B1E026CFE7358FB1060F31F5B764D2BDB1DE38259D21A87
+                      009BFF5CD63A04D8FCC7975DD7CA76699471C14F89E8DF9287009BFF9C963E04
+                      D8FCE7905DDBCA76CBB86096B4C421C0E63FB7A50E0136FF7964D7B7B25D332E
+                      98255DE51060F3DF87AB1E026CFE73C9AE7165BB675C304BBACC21C0E6BF2F97
+                      3D04D8FCE7935DE7CA76CFB8609676914380CD7F9F2E7A08B0F9CF29BBD69511
+                      8C0B6669E73904D8FCF7EDBC87009BFFBCB2EB5D19371817CCD26E7508B0F9D3
+                      9C7508B0F9CF2DBBE6957113E382595A7608B0F973B3D30E0136FFF99DBCE6D5
+                      718271C12CEDE64380CD9FCCC94380CD7F1F8ED77BAB481817CCD2DA21C0E6CF
+                      AD1C0F0136FFFDC8D6F6CA481817CC1A6EBBF1239CC63DB22FD9BA5E19A7302E
+                      188035656B7A65DC8271C100AC255BD32BE30CC60503B0866C3DAF8C73302E18
+                      80A5656B79659C8371C1002C2D5BC72BE39C8C0B066049D91A5E1917D0C605B7
+                      EFE5CE9EC85E322E18600CD91A5E1917645C30004BC8D6EFCAB804E38201B8AA
+                      6CEDAE8C4B322E1880ABC8D6EDCAB8A451C6053F3702A03FD99A5D1957605C30
+                      009795ADD7957145C605037019D97A5D190B302E18808BCAD6EACA588871C100
+                      5C44B64E57C6428C0B06E022B235BA3216645C3000E795ADCF95B130E3820138
+                      8F6C7DAE8C1518170CC059B2B5B93256625C3000B792ADCB95B122E38201384D
+                      B62657C68A8C0B06E034D97A5C192B332E18804CB616574601E3820138295B8B
+                      2BA38871C100DC2C5B872BA39071C1001C656B706514322E1880A36CFDAD8C62
+                      A38C0BFEAE0880F5646B6F656CC0B86000B2B5B73236625C30C0BE65EB6E656C
+                      C8B86080FDCAD6DCCAD89871C100FB94ADB795B131E38201F6295B6B2BA303C6
+                      0503EC4FB6CE5646278C0B06D8976C9DAD8C8E18170CB01FD91A5B199D312E18
+                      601FB2F5B5323A33CAB8E01746005C5EB6B65646878C0B06985FB6AE5646A78C
+                      0B06985BB6AE5646C78C0B069857B6A65646E78C0B069853B69E56C6008C0B06
+                      984FB69656C6008C0B06984FB68E56C6208C0B06984BB68656C6408C0B069847
+                      B68656C6608C0B069843B67E56C6808C0B06185FB67656C6808C0B06185FB66E
+                      56C6A08C0B06185BB66656C6C08C0B061857B66656C6E08C0B061853B65E56C6
+                      048C0B06184B7B9374B65656F5BB1193686FB8CB2E724FB5372EB6373002ECDD
+                      A745D93A59D5BB2226615C30C0381E1B656B6455BF1E3191CF88DE116517BB97
+                      3E1E3D3902D8B3BF14656B64556F88984C1BC3DBC6F16617BC973E183D3202D8
+                      AB7F1965EB63553F1B3121E38201FA759FE8FD51B63656F5CFBC216B4E2F895E
+                      70FDA7DDBA2DFAD1C8B860606FBE29BAEFF59F6EE6AD377E6442778F5E116527
+                      BF9EFA4711C05EFCBEE8D7A26C3DACCC7BB126D7BEEFBE7DFF7D76F17BCAB860
+                      602FFE7A94AD83D5B58F9767725F10F53E2EB84D326C130D0166F615511BC093
+                      AD83957D2CDAFA25088A3C216A33F9B31BA197DAB8E02F8E0066F490E89D51B6
+                      FE55F74B113BF2AC28BB117AAACD307868043093CF8EFE6B94AD7B5BD4FB9BC4
+                      59C108E382DB5702BC1C00CCA27DD9BF97BFF91F7B62C4CEB471C1AF8BB21BA2
+                      A7DAB4C0BF15DD3F0218517BB77F7BC35F0FAFF9DFDC8723AFFFEFD408E3828F
+                      FD56F4D7A20745002368437EFE62D466ED67EBDAD6BD3A62C74618177C73ED04
+                      DD661A3C337A5CF4E0E8DE11C096DADFF2DBA7FA3D267A46F4D268EB097F67F5
+                      ADD1C127DDF891FD69E3825F7CFDA700EC40FB1C96F617A87648394C8B639FDE
+                      18B52F557DE5E11100B36B1F40F42FAEFFF4DA359F05B06FED0D2A3F79FDA700
+                      4CAE7D27D81DBC04C0FDA2F69D010F3B3C0260466F881E11B5F7011CF80A00ED
+                      B5A03F17FDBFC3230066F437A23B36FFC65700386AC377DACB01DE1702309737
+                      470F8FDA8C953B58EC396ADFB3DADE217AFBE11100B3F8EEA8BD0470270E00DC
+                      ECB5519B59ED632201E6D03EF8A7CD50B9D397FF1B2F0170521B17FCEFA3C71E
+                      1E0130AAF625FFF65904BF70787482370172529BBAD7DE14F8F6C3230046F5F7
+                      A374F36F7C0580D3B471C1FF316A5F1100602CEDB354BE307ACFE151C2570038
+                      CDEBA36FBFFE530006D25EEFFFB6E8D4CDBFF126406EA58D0B6E1F1BD95E4302
+                      600CCF8DFEDEF59F9ECE4B009CA57D95E8DF445F73780440CFDA64D73F1E7DE4
+                      F0E8161C00388F0746AF89BEE8F008801EFD46D4DEBFF58EC3A333780F00E7D1
+                      C604B70141FFEBF00880DEBC2FFAD3D1B936FFC60180F36A27CB362EF8FF1C1E
+                      01D08B0F475F1FFDF2E1D13939007011FF236AEF05681F2004C0F63E163D397A
+                      F5E1D10538007051BF187D6DF4DEC32300B6D206B77D63F463874717E44D805C
+                      567B43E02BA2871C1E0150E977A2AF8B7EEAF0E8121C00B88ADBA297473E3C08
+                      A0CE3BA32746177ACDFF242F017015BF193D2E7AD5E111006BFBD9E891D19536
+                      FFC62440AEAABDFBF49F466DE4E49F8CEE1101B0AC36DEF7EF464F8DDAB7665F
+                      99970058D297442F891E7E7804C012DA07FB7C4BF4CAC3A385F80A004B6A3302
+                      FE7174EFE831910326C0E5B5CFF36F1FE9DBDEECF7A6F60B4BB240B3968746DF
+                      177DC3E1110017F19FA3BF1CB5D9FEABF02640D6F2E6A87D7FEA5745FFA9FD02
+                      00676A6BE737478F8A56DBFC1B5F01A042BBCFDA98CAEF8CFE58FB0500EEA4BD
+                      ABFFFBA336D4A77DE97F750E00546B03849E113D2D7A40FB05809DFA60F4E3D1
+                      0BA336CAB7BDD3BF8C03005BB94FF4E7A3F6D9025F1DB58F1C06985DFB9CFE9F
+                      895E1CB5BFED6FF6D92A0E00F4A0CD0EF8F2E80951FBC4C12F8EEE19018CAE7D
+                      39BF7D79FFA76FD406F9B431BE9B7300A047EDDB53FF50D4E609B4EF26683F7E
+                      56F4A01BB503C3EF8F00B6D406A1B5CDBC0DE6697F936FBD3DFAD5E82DD15B6F
+                      D4C5860F00000000000000000000000000000000000000000000000000000000
+                      0000000000000000000000000000000000000000000000000000000000000000
+                      0000000000000000000000000000000000000000000000000000000000000000
+                      0000000000000000000000000000000000000000000000000000000000000000
+                      0000B08E6BD7FE3F7889DB073F64A2B10000000049454E44AE426082}
+                    FileName = 'F:\icons\delete (1).png'
+                  end>
+                Align = Center
+                HitTest = False
+                Margins.Left = 30.000000000000000000
+                Margins.Right = 30.000000000000000000
+                Size.Width = 30.000000000000000000
+                Size.Height = 185.500000000000000000
+                Size.PlatformDefault = False
+              end
+            end
+          end
+          object GridPanelLayout3: TGridPanelLayout
+            Align = Client
+            Size.Width = 281.250000000000000000
+            Size.Height = 344.001007080078100000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            ColumnCollection = <
+              item
+                Value = 100.000000000000000000
+              end>
+            ControlCollection = <
+              item
+                Column = 0
+                Control = GridPanelLayout4
+                Row = 0
+              end
+              item
+                Column = 0
+                Control = GridPanelLayout5
+                Row = 1
+              end>
+            RowCollection = <
+              item
+                Value = 75.000000000000000000
+              end
+              item
+                Value = 25.000000000000000000
+              end>
+            object GridPanelLayout4: TGridPanelLayout
+              Align = Client
+              Size.Width = 281.250000000000000000
+              Size.Height = 258.000762939453100000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              ColumnCollection = <
+                item
+                  Value = 33.333335000000080000
+                end
+                item
+                  Value = 33.333333333333310000
+                end
+                item
+                  Value = 33.333331666666620000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = Rectangle2
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = Rectangle3
+                  Row = 0
+                end
+                item
+                  Column = 2
+                  Control = Rectangle4
+                  Row = 0
+                end
+                item
+                  Column = 0
+                  Control = Rectangle5
+                  Row = 1
+                end
+                item
+                  Column = 1
+                  Control = Rectangle6
+                  Row = 1
+                end
+                item
+                  Column = 2
+                  Control = Rectangle7
+                  Row = 1
+                end
+                item
+                  Column = 0
+                  Control = Rectangle8
+                  Row = 2
+                end
+                item
+                  Column = 1
+                  Control = Rectangle9
+                  Row = 2
+                end
+                item
+                  Column = 2
+                  Control = Rectangle10
+                  Row = 2
+                end>
+              RowCollection = <
+                item
+                  Value = 33.333335000000080000
+                end
+                item
+                  Value = 33.333333333333310000
+                end
+                item
+                  Value = 33.333331666666620000
+                end>
+              object Rectangle2: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.750007629394530000
+                Size.Height = 84.000259399414060000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text3: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '7'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation1: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle3: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.749992370605470000
+                Size.Height = 84.000259399414060000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text4: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '8'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation3: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle4: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.750000000000000000
+                Size.Height = 84.000259399414060000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text5: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '9'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation5: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle5: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.750007629394530000
+                Size.Height = 84.000259399414060000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text6: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '4'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation7: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle6: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.749992370605470000
+                Size.Height = 84.000259399414060000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text7: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '5'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation10: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle7: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.750000000000000000
+                Size.Height = 84.000259399414060000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text8: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '6'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation11: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle8: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.750007629394530000
+                Size.Height = 84.000244140625000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text9: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '1'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation13: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle9: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.749992370605470000
+                Size.Height = 84.000244140625000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text10: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '2'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation15: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle10: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.750000000000000000
+                Size.Height = 84.000244140625000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text11: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '3'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation17: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+            end
+            object GridPanelLayout5: TGridPanelLayout
+              Align = Client
+              Size.Width = 281.250000000000000000
+              Size.Height = 86.000244140625000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              ColumnCollection = <
+                item
+                  Value = 66.666670000000000000
+                end
+                item
+                  Value = 33.333330000000000000
+                end>
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = Rectangle13
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = Rectangle14
+                  Row = 0
+                end>
+              RowCollection = <
+                item
+                  Value = 100.000000000000000000
+                end>
+              object Rectangle13: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 185.500015258789100000
+                Size.Height = 84.000244140625000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text14: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '0'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 30.000000000000000000
+                end
+                object ColorAnimation6: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+              object Rectangle14: TRectangle
+                Align = Client
+                Cursor = crHandPoint
+                Fill.Color = xFFD9E6F0
+                Margins.Left = 1.000000000000000000
+                Margins.Top = 1.000000000000000000
+                Margins.Right = 1.000000000000000000
+                Margins.Bottom = 1.000000000000000000
+                Size.Width = 91.749984741210940000
+                Size.Height = 84.000244140625000000
+                Size.PlatformDefault = False
+                Stroke.Kind = None
+                object Text15: TText
+                  Align = Center
+                  HitTest = False
+                  Margins.Left = 2.000000000000000000
+                  Size.Width = 92.000000000000000000
+                  Size.Height = 57.000000000000000000
+                  Size.PlatformDefault = False
+                  Text = '.'
+                  TextSettings.Font.Family = 'Tajawal'
+                  TextSettings.Font.Size = 34.000000000000000000
+                  TextSettings.Font.StyleExt = {00050000000000000004000000}
+                end
+                object ColorAnimation8: TColorAnimation
+                  Duration = 0.200000002980232200
+                  PropertyName = 'Fill.Color'
+                  StartValue = xFFD9E6F0
+                  StopValue = xFFBBD3E5
+                  Trigger = 'IsMouseOver=true'
+                  TriggerInverse = 'IsMouseOver=false'
+                end
+              end
+            end
+          end
         end
       end
     end
@@ -3124,5 +3743,271 @@ object Form1: TForm1
   object Brush1: TBrushObject
     StyleName = 'Brush1'
     Brush.Color = xFF72ABD4
+  end
+  object StyleBook1: TStyleBook
+    Styles = <
+      item
+      end
+      item
+        Platform = 'AndroidL Light'
+        ResourcesBin = {
+          464D585F5354594C4520322E35010609456469747374796C6503290C06214564
+          69747374796C656C65667473656C656374696F6E706F696E747374796C653103
+          64030622456469747374796C65726967687473656C656374696F6E706F696E74
+          7374796C6531034F030614456469747374796C654C6162656C5374796C653103
+          4501005450463007544C61796F757400095374796C654E616D65060945646974
+          7374796C6505416C69676E070643656E7465720A53697A652E57696474680500
+          0000000000A08B07400B53697A652E4865696768740500000000000000800440
+          1453697A652E506C6174666F726D44656661756C7408085461624F7264657202
+          080B466978656448656967687402200012544163746976655374796C654F626A
+          65637400095374796C654E616D65060A6261636B67726F756E6405416C69676E
+          0708436F6E74656E7473074F70616369747905000000000000000000000C536F
+          757263654C6F6F6B75700617416E64726F69644C204C696768747374796C652E
+          706E670A53697A652E576964746805000000000000A08B07400B53697A652E48
+          656967687405000000000000008004401453697A652E506C6174666F726D4465
+          6661756C74080D416374697665547269676765720707466F63757365640A4163
+          746976654C696E6B0E010E436170496E736574732E4C65667405000000000000
+          008001400F436170496E736574732E526967687405000000000000008001400F
+          536F75726365526563742E4C6566740500000000000000BC05400E536F757263
+          65526563742E546F700500000000000000FC044010536F75726365526563742E
+          52696768740500000000000000FE054011536F75726365526563742E426F7474
+          6F6D0500000000000000BE054000010E436170496E736574732E4C6566740500
+          000000000000C001400F436170496E736574732E526967687405000000000000
+          00C00140055363616C650500000000000000C0FF3F0F536F7572636552656374
+          2E4C65667405000000000000009D06400E536F75726365526563742E546F7005
+          00000000000000BE054010536F75726365526563742E52696768740500000000
+          000000CE064011536F75726365526563742E426F74746F6D0500000000000000
+          8F064000010E436170496E736574732E4C65667405000000000000008002400F
+          436170496E736574732E52696768740500000000000000800240055363616C65
+          05000000000000008000400F536F75726365526563742E4C6566740500000000
+          000000BB06400E536F75726365526563742E546F700500000000000000F40540
+          10536F75726365526563742E52696768740500000000000000FD064011536F75
+          726365526563742E426F74746F6D0500000000000000BA064000010E43617049
+          6E736574732E4C6566740500000000000000C002400F436170496E736574732E
+          52696768740500000000000000C00240055363616C650500000000000000C000
+          400F536F75726365526563742E4C6566740500000000000080A807400E536F75
+          726365526563742E546F700500000000000000BE064010536F75726365526563
+          742E52696768740500000000000000DA074011536F75726365526563742E426F
+          74746F6D05000000000000008F074000000A536F757263654C696E6B0E010E43
+          6170496E736574732E4C65667405000000000000008001400F436170496E7365
+          74732E526967687405000000000000008001400F536F75726365526563742E4C
+          6566740500000000000000BC05400E536F75726365526563742E546F70050000
+          0000000000F0034010536F75726365526563742E526967687405000000000000
+          00FE054011536F75726365526563742E426F74746F6D0500000000000000F804
+          4000010E436170496E736574732E4C6566740500000000000000C001400F4361
+          70496E736574732E52696768740500000000000000C00140055363616C650500
+          000000000000C0FF3F0F536F75726365526563742E4C65667405000000000000
+          009D06400E536F75726365526563742E546F700500000000000000B404401053
+          6F75726365526563742E52696768740500000000000000CE064011536F757263
+          65526563742E426F74746F6D0500000000000000BA054000010E436170496E73
+          6574732E4C65667405000000000000008002400F436170496E736574732E5269
+          6768740500000000000000800240055363616C6505000000000000008000400F
+          536F75726365526563742E4C6566740500000000000000BB06400E536F757263
+          65526563742E546F700500000000000000E4044010536F75726365526563742E
+          52696768740500000000000000FD064011536F75726365526563742E426F7474
+          6F6D0500000000000000F2054000010E436170496E736574732E4C6566740500
+          000000000000C002400F436170496E736574732E526967687405000000000000
+          00C00240055363616C650500000000000000C000400F536F7572636552656374
+          2E4C6566740500000000000080A807400E536F75726365526563742E546F7005
+          00000000000000BA054010536F75726365526563742E52696768740500000000
+          000000DA074011536F75726365526563742E426F74746F6D0500000000000000
+          BD0640000013546F756368416E696D6174696F6E2E4C696E6B0E00000007544C
+          61796F757400095374796C654E616D650607636F6E74656E7405416C69676E07
+          06436C69656E74064C6F636B6564090C4D617267696E732E4C65667405000000
+          000000008000400B4D617267696E732E546F7005000000000000008000400D4D
+          617267696E732E526967687405000000000000008000400E4D617267696E732E
+          426F74746F6D05000000000000008000400A53697A652E576964746805000000
+          00000040DF06400B53697A652E4865696768740500000000000000E003401453
+          697A652E506C6174666F726D44656661756C7408000007544C61796F75740009
+          5374796C654E616D650607627574746F6E7305416C69676E0705526967687406
+          4C6F636B6564090B4D617267696E732E546F7005000000000000008000400D4D
+          617267696E732E526967687405000000000000008000400E4D617267696E732E
+          426F74746F6D05000000000000008000400A506F736974696F6E2E5805000000
+          00000040E306400A506F736974696F6E2E5905000000000000008000400A5369
+          7A652E57696474680500000000000000C804400B53697A652E48656967687405
+          00000000000000E003401453697A652E506C6174666F726D44656661756C7408
+          00000C54436F6C6F724F626A65637400095374796C654E616D65060A63617265
+          74636F6C6F7205436F6C6F72070978464632323232323200000C544272757368
+          4F626A65637400095374796C654E616D65060A666F726567726F756E640B4272
+          7573682E436F6C6F72070978464632323232323200000C5442727573684F626A
+          65637400095374796C654E616D65060973656C656374696F6E0B42727573682E
+          436F6C6F72070978374633334235453500000B54466F6E744F626A6563740009
+          5374796C654E616D650604666F6E7409466F6E742E53697A6505000000000000
+          0090034000000F5453656C656374696F6E506F696E7400095374796C654E616D
+          6506126C65667473656C656374696F6E706F696E74084772697053697A650500
+          000000000000C000400C4772697043656E7465722E580500000000000000E002
+          400C4772697043656E7465722E590500000000000000B003C00A53697A652E57
+          696474680500000000000000C003400B53697A652E4865696768740500000000
+          000000C003401453697A652E506C6174666F726D44656661756C74080B537479
+          6C654C6F6F6B75700621456469747374796C656C65667473656C656374696F6E
+          706F696E747374796C653119546F756368546172676574457870616E73696F6E
+          2E4C6566740500000000000000E003401A546F75636854617267657445787061
+          6E73696F6E2E52696768740500000000000000E003C000000F5453656C656374
+          696F6E506F696E7400095374796C654E616D650613726967687473656C656374
+          696F6E706F696E74084772697053697A650500000000000000C000400C477269
+          7043656E7465722E590500000000000000B004C00A53697A652E576964746805
+          00000000000000C003400B53697A652E4865696768740500000000000000C003
+          401453697A652E506C6174666F726D44656661756C74080B5374796C654C6F6F
+          6B75700622456469747374796C65726967687473656C656374696F6E706F696E
+          747374796C6531000006544C6162656C00095374796C654E616D65060670726F
+          6D7074064C6F636B656409074F706163697479050000000000000080FE3F0B53
+          74796C654C6F6F6B75700614456469747374796C654C6162656C5374796C6531
+          0756697369626C65080000005450463007544C61796F757400095374796C654E
+          616D650621456469747374796C656C65667473656C656374696F6E706F696E74
+          7374796C65310A53697A652E576964746805000000000000A08B07400B53697A
+          652E48656967687405000000000000008004401453697A652E506C6174666F72
+          6D44656661756C74080756697369626C6508085461624F7264657202640A4669
+          786564576964746802180B46697865644865696768740218000C545374796C65
+          4F626A65637400095374796C654E616D65060A6261636B67726F756E640C536F
+          757263654C6F6F6B75700617416E64726F69644C204C696768747374796C652E
+          706E670A506F736974696F6E2E580500000000000000C003C00A53697A652E57
+          696474680500000000000000C003400B53697A652E4865696768740500000000
+          000000C003401453697A652E506C6174666F726D44656661756C740808577261
+          704D6F6465070643656E7465720A536F757263654C696E6B0E010F536F757263
+          65526563742E4C65667405000000000000009002400E536F7572636552656374
+          2E546F700500000000000000D4054010536F75726365526563742E5269676874
+          050000000000000084044011536F75726365526563742E426F74746F6D050000
+          00000000008206400001055363616C650500000000000000C0FF3F0F536F7572
+          6365526563742E4C6566740500000000000000C002400E536F75726365526563
+          742E546F70050000000000000090064010536F75726365526563742E52696768
+          740500000000000000C0044011536F75726365526563742E426F74746F6D0500
+          000000000000B406400001055363616C6505000000000000008000400F536F75
+          726365526563742E4C6566740500000000000000E002400E536F757263655265
+          63742E546F700500000000000000C9064010536F75726365526563742E526967
+          6874050000000000000084054011536F75726365526563742E426F74746F6D05
+          00000000000000FD06400001055363616C650500000000000000C000400F536F
+          75726365526563742E4C6566740500000000000000A003400E536F7572636552
+          6563742E546F70050000000000000093074010536F75726365526563742E5269
+          6768740500000000000000B8054011536F75726365526563742E426F74746F6D
+          0500000000000000B7074000000000005450463007544C61796F757400095374
+          796C654E616D650622456469747374796C65726967687473656C656374696F6E
+          706F696E747374796C65310A53697A652E576964746805000000000000A08B07
+          400B53697A652E48656967687405000000000000008004401453697A652E506C
+          6174666F726D44656661756C74080756697369626C6508085461624F72646572
+          02650A4669786564576964746802180B46697865644865696768740218000C54
+          5374796C654F626A65637400095374796C654E616D65060A6261636B67726F75
+          6E640C536F757263654C6F6F6B75700617416E64726F69644C204C6967687473
+          74796C652E706E670A53697A652E57696474680500000000000000C003400B53
+          697A652E4865696768740500000000000000C003401453697A652E506C617466
+          6F726D44656661756C740808577261704D6F6465070643656E7465720A536F75
+          7263654C696E6B0E010F536F75726365526563742E4C65667405000000000000
+          00FC04400E536F75726365526563742E546F700500000000000000D405401053
+          6F75726365526563742E52696768740500000000000000AE054011536F757263
+          65526563742E426F74746F6D05000000000000008206400001055363616C6505
+          00000000000000C0FF3F0F536F75726365526563742E4C656674050000000000
+          0000BC05400E536F75726365526563742E546F70050000000000000090064010
+          536F75726365526563742E5269676874050000000000000082064011536F7572
+          6365526563742E426F74746F6D0500000000000000B406400001055363616C65
+          05000000000000008000400F536F75726365526563742E4C6566740500000000
+          000000EC05400E536F75726365526563742E546F700500000000000000C90640
+          10536F75726365526563742E52696768740500000000000000AA064011536F75
+          726365526563742E426F74746F6D0500000000000000FD06400001055363616C
+          650500000000000000C000400F536F75726365526563742E4C65667405000000
+          00000000BD06400E536F75726365526563742E546F7005000000000000809307
+          4010536F75726365526563742E5269676874050000000000008082074011536F
+          75726365526563742E426F74746F6D0500000000000080B70740000000000054
+          50463007544C61796F757400095374796C654E616D650614456469747374796C
+          654C6162656C5374796C65310A53697A652E576964746805000000000000A08B
+          07400B53697A652E48656967687405000000000000008004401453697A652E50
+          6C6174666F726D44656661756C74080756697369626C6508085461624F726465
+          7202030005545465787400095374796C654E616D6506047465787405416C6967
+          6E0706436C69656E74064C6F636B6564090748697454657374080A53697A652E
+          576964746805000000000000A08B07400B53697A652E48656967687405000000
+          000000008004401453697A652E506C6174666F726D44656661756C7408165465
+          787453657474696E67732E466F6E742E53697A65050000000000000090034016
+          5465787453657474696E67732E466F6E74436F6C6F7207097846463232323232
+          32000000}
+      end
+      item
+        Platform = 'Windows 10 Desktop'
+        ResourcesBin = {
+          464D585F5354594C4520322E35010609456469747374796C6503A10906144564
+          69747374796C654C6162656C5374796C6531030101005450463007544C61796F
+          757400095374796C654E616D650609456469747374796C6505416C69676E0706
+          43656E7465720A53697A652E576964746805000000000000A08B07400B53697A
+          652E486569676874050000000000DFFFA906401453697A652E506C6174666F72
+          6D44656661756C7408085461624F72646572020C001254416374697665537479
+          6C654F626A65637400095374796C654E616D65060A6261636B67726F756E6405
+          416C69676E0708436F6E74656E7473074F706163697479050000000000000000
+          00000C536F757263654C6F6F6B7570061B57696E646F7773203130204465736B
+          746F707374796C652E706E670A53697A652E576964746805000000000000A08B
+          07400B53697A652E486569676874050000000000DFFFA906401453697A652E50
+          6C6174666F726D44656661756C74080D41637469766554726967676572070746
+          6F63757365640A4163746976654C696E6B0E010E436170496E736574732E4C65
+          66740500000000000000E001400D436170496E736574732E546F700500000000
+          000000E001400F436170496E736574732E52696768740500000000000000E001
+          4010436170496E736574732E426F74746F6D0500000000000000E001400F536F
+          75726365526563742E4C65667405000000000000008507400E536F7572636552
+          6563742E546F700500000000000000A2054010536F75726365526563742E5269
+          676874050000000000008098074011536F75726365526563742E426F74746F6D
+          0500000000000000DC054000010E436170496E736574732E4C65667405000000
+          00000000A002400D436170496E736574732E546F700500000000000000A00240
+          0F436170496E736574732E52696768740500000000000000A002401043617049
+          6E736574732E426F74746F6D0500000000000000A00240055363616C65050000
+          0000000000C0FF3F0F536F75726365526563742E4C6566740500000000000080
+          C707400E536F75726365526563742E546F700500000000000000F2054010536F
+          75726365526563742E52696768740500000000000080E4074011536F75726365
+          526563742E426F74746F6D0500000000000000A5064000010E436170496E7365
+          74732E4C6566740500000000000000E002400D436170496E736574732E546F70
+          0500000000000000E002400F436170496E736574732E52696768740500000000
+          000000E0024010436170496E736574732E426F74746F6D0500000000000000E0
+          0240055363616C6505000000000000008000400F536F75726365526563742E4C
+          65667405000000000000008508400E536F75726365526563742E546F70050000
+          0000000000A2064010536F75726365526563742E526967687405000000000000
+          8098084011536F75726365526563742E426F74746F6D0500000000000000DC06
+          4000000A536F757263654C696E6B0E010E436170496E736574732E4C65667405
+          00000000000000E001400D436170496E736574732E546F700500000000000000
+          E001400F436170496E736574732E52696768740500000000000000E001401043
+          6170496E736574732E426F74746F6D0500000000000000E001400F536F757263
+          65526563742E4C6566740500000000000000E106400E536F7572636552656374
+          2E546F700500000000000000A2054010536F75726365526563742E5269676874
+          050000000000000084074011536F75726365526563742E426F74746F6D050000
+          0000000000DC054000010E436170496E736574732E4C65667405000000000000
+          00A002400D436170496E736574732E546F700500000000000000A002400F4361
+          70496E736574732E52696768740500000000000000A0024010436170496E7365
+          74732E426F74746F6D0500000000000000A00240055363616C65050000000000
+          0000C0FF3F0F536F75726365526563742E4C6566740500000000000080A80740
+          0E536F75726365526563742E546F700500000000000000F2054010536F757263
+          65526563742E52696768740500000000000000C6074011536F75726365526563
+          742E426F74746F6D0500000000000000A5064000010E436170496E736574732E
+          4C6566740500000000000000E002400D436170496E736574732E546F70050000
+          0000000000E002400F436170496E736574732E52696768740500000000000000
+          E0024010436170496E736574732E426F74746F6D0500000000000000E0024005
+          5363616C6505000000000000008000400F536F75726365526563742E4C656674
+          0500000000000000E107400E536F75726365526563742E546F70050000000000
+          0000A2064010536F75726365526563742E526967687405000000000000008408
+          4011536F75726365526563742E426F74746F6D0500000000000000DC06400000
+          13546F756368416E696D6174696F6E2E4C696E6B0E00000007544C61796F7574
+          00095374796C654E616D650607636F6E74656E7405416C69676E0706436C6965
+          6E74064C6F636B6564090C4D617267696E732E4C6566740500000000000000C0
+          00400B4D617267696E732E546F700500000000000000C000400D4D617267696E
+          732E52696768740500000000000000C000400E4D617267696E732E426F74746F
+          6D0500000000000000C000400A53697A652E576964746805000000000000A087
+          07400B53697A652E486569676874050000000000DFFFA306401453697A652E50
+          6C6174666F726D44656661756C7408000007544C61796F757400095374796C65
+          4E616D650607627574746F6E7305416C69676E07055269676874064C6F636B65
+          64090B4D617267696E732E546F7005000000000000008000400D4D617267696E
+          732E526967687405000000000000008000400E4D617267696E732E426F74746F
+          6D05000000000000008000400A506F736974696F6E2E5805000000000000A08A
+          07400A506F736974696F6E2E5905000000000000008000400A53697A652E5769
+          64746805000000000000000000000B53697A652E486569676874050000000000
+          DFFFA506401453697A652E506C6174666F726D44656661756C740800000C5442
+          727573684F626A65637400095374796C654E616D65060A666F726567726F756E
+          640B42727573682E436F6C6F720708636C61426C61636B00000C544272757368
+          4F626A65637400095374796C654E616D65060973656C656374696F6E0B427275
+          73682E436F6C6F72070978374632413936464600000B54466F6E744F626A6563
+          7400095374796C654E616D650604666F6E74000006544C6162656C0009537479
+          6C654E616D65060670726F6D7074064C6F636B656409074F7061636974790500
+          00000000000080FE3F0B5374796C654C6F6F6B75700614456469747374796C65
+          4C6162656C5374796C65310756697369626C65080000005450463007544C6179
+          6F757400095374796C654E616D650614456469747374796C654C6162656C5374
+          796C65310A53697A652E576964746805000000000000A08B07400B53697A652E
+          486569676874050000000000DFFFA906401453697A652E506C6174666F726D44
+          656661756C74080756697369626C6508085461624F7264657202030005545465
+          787400095374796C654E616D6506047465787405416C69676E0706436C69656E
+          74064C6F636B6564090748697454657374080A53697A652E5769647468050000
+          00000000A08B07400B53697A652E486569676874050000000000DFFFA9064014
+          53697A652E506C6174666F726D44656661756C7408000000}
+      end>
   end
 end

@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.TabControl,
-  FMX.Objects, FMX.Ani, FMX.Layouts;
+  FMX.Objects, FMX.Ani, FMX.Layouts, FMX.Controls.Presentation, FMX.Edit;
 
 type
   TForm1 = class(TForm)
@@ -29,24 +29,57 @@ type
     Rectangle2: TRectangle;
     Brush1: TBrushObject;
     Text3: TText;
+    ColorAnimation1: TColorAnimation;
     Rectangle3: TRectangle;
     Text4: TText;
+    ColorAnimation3: TColorAnimation;
     Rectangle4: TRectangle;
     Text5: TText;
+    ColorAnimation5: TColorAnimation;
     Rectangle5: TRectangle;
     Text6: TText;
+    ColorAnimation7: TColorAnimation;
     Rectangle6: TRectangle;
     Text7: TText;
+    ColorAnimation10: TColorAnimation;
     Rectangle7: TRectangle;
     Text8: TText;
+    ColorAnimation11: TColorAnimation;
     Rectangle8: TRectangle;
     Text9: TText;
+    ColorAnimation13: TColorAnimation;
     Rectangle9: TRectangle;
     Text10: TText;
+    ColorAnimation15: TColorAnimation;
     Rectangle10: TRectangle;
     Text11: TText;
-    procedure FloatAnimation1Finish(Sender: TObject);
-    procedure FloatAnimation2Finish(Sender: TObject);
+    ColorAnimation17: TColorAnimation;
+    Rectangle11: TRectangle;
+    Text12: TText;
+    ColorAnimation2: TColorAnimation;
+    Rectangle12: TRectangle;
+    ColorAnimation4: TColorAnimation;
+    Rectangle13: TRectangle;
+    Text14: TText;
+    ColorAnimation6: TColorAnimation;
+    Rectangle14: TRectangle;
+    Text15: TText;
+    ColorAnimation8: TColorAnimation;
+    Rectangle15: TRectangle;
+    Text16: TText;
+    Rectangle16: TRectangle;
+    Rectangle17: TRectangle;
+    Text18: TText;
+    Rectangle18: TRectangle;
+    Image3: TImage;
+    GridPanelLayout7: TGridPanelLayout;
+    Edit1: TEdit;
+    StyleBook1: TStyleBook;
+    Edit2: TEdit;
+    procedure Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Rectangle16Click(Sender: TObject);
+    procedure Rectangle18Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -60,14 +93,27 @@ implementation
 
 {$R *.fmx}
 
-procedure TForm1.FloatAnimation1Finish(Sender: TObject);
+
+
+
+procedure TForm1.Rectangle16Click(Sender: TObject);
 begin
-  FloatAnimation2.Enabled := true;
+  Rectangle16.Stroke.Thickness := 7;
+  Rectangle18.Stroke.Thickness := 0;
 end;
 
-procedure TForm1.FloatAnimation2Finish(Sender: TObject);
+procedure TForm1.Rectangle18Click(Sender: TObject);
 begin
-  FloatAnimation3.Enabled := true;
+  Rectangle18.Stroke.Thickness := 7;
+  Rectangle16.Stroke.Thickness := 0;
 end;
+
+procedure TForm1.Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+
 
 end.
