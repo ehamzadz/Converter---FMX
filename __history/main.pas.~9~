@@ -25,7 +25,6 @@ type
     GridPanelLayout5: TGridPanelLayout;
     GridPanelLayout6: TGridPanelLayout;
     Rectangle1: TRectangle;
-    Text2: TText;
     procedure FloatAnimation1Finish(Sender: TObject);
     procedure FloatAnimation2Finish(Sender: TObject);
   private

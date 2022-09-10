@@ -2683,9 +2683,9 @@ object Form1: TForm1
       ExplicitSize.cy = 8.000000000000000000
       object GridPanelLayout1: TGridPanelLayout
         Align = Bottom
-        Position.Y = 425.000000000000000000
+        Position.Y = 400.000000000000000000
         Size.Width = 375.000000000000000000
-        Size.Height = 375.000000000000000000
+        Size.Height = 400.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         ColumnCollection = <
@@ -2713,7 +2713,7 @@ object Form1: TForm1
         object GridPanelLayout2: TGridPanelLayout
           Align = Client
           Size.Width = 93.750000000000000000
-          Size.Height = 375.000000000000000000
+          Size.Height = 400.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           ColumnCollection = <
@@ -2732,7 +2732,7 @@ object Form1: TForm1
         object GridPanelLayout3: TGridPanelLayout
           Align = Client
           Size.Width = 281.250000000000000000
-          Size.Height = 375.000000000000000000
+          Size.Height = 400.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
           ColumnCollection = <
@@ -2760,7 +2760,7 @@ object Form1: TForm1
           object GridPanelLayout4: TGridPanelLayout
             Align = Client
             Size.Width = 281.250000000000000000
-            Size.Height = 281.250000000000000000
+            Size.Height = 300.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 0
             ColumnCollection = <
@@ -2771,7 +2771,7 @@ object Form1: TForm1
                 Value = 33.333333333333310000
               end
               item
-                Value = 33.333331666666610000
+                Value = 33.333331666666620000
               end>
             ControlCollection = <>
             RowCollection = <
@@ -2782,13 +2782,13 @@ object Form1: TForm1
                 Value = 33.333333333333310000
               end
               item
-                Value = 33.333331666666610000
+                Value = 33.333331666666620000
               end>
           end
           object GridPanelLayout5: TGridPanelLayout
             Align = Client
             Size.Width = 281.250000000000000000
-            Size.Height = 93.750000000000000000
+            Size.Height = 100.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 1
             ColumnCollection = <
@@ -2804,46 +2804,6 @@ object Form1: TForm1
                 Value = 100.000000000000000000
               end>
           end
-        end
-      end
-      object GridPanelLayout6: TGridPanelLayout
-        Align = Client
-        Size.Width = 375.000000000000000000
-        Size.Height = 336.000000000000000000
-        Size.PlatformDefault = False
-        TabOrder = 1
-        ColumnCollection = <
-          item
-            Value = 25.000000000000000000
-          end
-          item
-            Value = 75.000000000000000000
-          end>
-        ControlCollection = <>
-        RowCollection = <
-          item
-            Value = 50.000000000000000000
-          end
-          item
-            Value = 50.000000000000000000
-          end>
-      end
-      object Rectangle1: TRectangle
-        Align = Top
-        Size.Width = 375.000000000000000000
-        Size.Height = 89.000000000000000000
-        Size.PlatformDefault = False
-        object Text2: TText
-          Align = Client
-          Margins.Left = 25.000000000000000000
-          Size.Width = 350.000000000000000000
-          Size.Height = 89.000000000000000000
-          Size.PlatformDefault = False
-          Text = 'Converter'
-          TextSettings.Font.Family = 'Tajawal'
-          TextSettings.Font.Size = 24.000000000000000000
-          TextSettings.Font.StyleExt = {00050000000000000004000000}
-          TextSettings.HorzAlign = Leading
         end
       end
     end
