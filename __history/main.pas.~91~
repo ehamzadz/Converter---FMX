@@ -1,0 +1,388 @@
+unit main;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.TabControl,
+  FMX.Objects, FMX.Ani, FMX.Layouts, FMX.Controls.Presentation, FMX.Edit;
+
+type
+  TForm1 = class(TForm)
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    Image1: TImage;
+    Image2: TImage;
+    Text1: TText;
+    FloatAnimation1: TFloatAnimation;
+    FloatAnimation2: TFloatAnimation;
+    FloatAnimation3: TFloatAnimation;
+    GridPanelLayout1: TGridPanelLayout;
+    GridPanelLayout2: TGridPanelLayout;
+    GridPanelLayout3: TGridPanelLayout;
+    GridPanelLayout4: TGridPanelLayout;
+    GridPanelLayout5: TGridPanelLayout;
+    GridPanelLayout6: TGridPanelLayout;
+    Rectangle1: TRectangle;
+    Text2: TText;
+    Rectangle2: TRectangle;
+    Brush1: TBrushObject;
+    Text3: TText;
+    ColorAnimation1: TColorAnimation;
+    Rectangle3: TRectangle;
+    Text4: TText;
+    ColorAnimation3: TColorAnimation;
+    Rectangle4: TRectangle;
+    Text5: TText;
+    ColorAnimation5: TColorAnimation;
+    Rectangle5: TRectangle;
+    Text6: TText;
+    ColorAnimation7: TColorAnimation;
+    Rectangle6: TRectangle;
+    Text7: TText;
+    ColorAnimation10: TColorAnimation;
+    Rectangle7: TRectangle;
+    Text8: TText;
+    ColorAnimation11: TColorAnimation;
+    Rectangle8: TRectangle;
+    Text9: TText;
+    ColorAnimation13: TColorAnimation;
+    Rectangle9: TRectangle;
+    Text10: TText;
+    ColorAnimation15: TColorAnimation;
+    Rectangle10: TRectangle;
+    Text11: TText;
+    ColorAnimation17: TColorAnimation;
+    Rectangle11: TRectangle;
+    Text12: TText;
+    ColorAnimation2: TColorAnimation;
+    Rectangle12: TRectangle;
+    ColorAnimation4: TColorAnimation;
+    Rectangle13: TRectangle;
+    Text14: TText;
+    ColorAnimation6: TColorAnimation;
+    Rectangle14: TRectangle;
+    Text15: TText;
+    ColorAnimation8: TColorAnimation;
+    Rectangle15: TRectangle;
+    Text16: TText;
+    Rectangle16: TRectangle;
+    Rectangle17: TRectangle;
+    Text18: TText;
+    Rectangle18: TRectangle;
+    Image3: TImage;
+    GridPanelLayout7: TGridPanelLayout;
+    Edit1: TEdit;
+    StyleBook1: TStyleBook;
+    Edit2: TEdit;
+    Brush2: TBrushObject;
+    procedure Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
+      Shift: TShiftState; X, Y: Single);
+    procedure Rectangle16Click(Sender: TObject);
+    procedure Rectangle18Click(Sender: TObject);
+    procedure Rectangle12Click(Sender: TObject);
+    procedure Rectangle8Click(Sender: TObject);
+    procedure Rectangle9Click(Sender: TObject);
+    procedure Rectangle10Click(Sender: TObject);
+    procedure Rectangle5Click(Sender: TObject);
+    procedure Rectangle6Click(Sender: TObject);
+    procedure Rectangle7Click(Sender: TObject);
+    procedure Rectangle2Click(Sender: TObject);
+    procedure Rectangle3Click(Sender: TObject);
+    procedure Rectangle4Click(Sender: TObject);
+    procedure Rectangle13Click(Sender: TObject);
+    procedure Rectangle11Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure Rectangle1DblClick(Sender: TObject);
+    procedure FloatAnimation1Finish(Sender: TObject);
+    procedure FloatAnimation2Finish(Sender: TObject);
+    procedure FloatAnimation3Finish(Sender: TObject);
+    procedure Rectangle14Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  editDecimal,editBinary :string;
+  whichOneIsActive :string;
+  editDecimalContent, editBinaryContent:string;
+  isCommaSelected :boolean;
+
+implementation
+
+{$R *.fmx}
+
+
+{** A power function from Jack Lyle. Said to be more powerful than the
+    Pow function that comes with Delphi. }
+function Power2(Base, Exponent : Double) : Double;
+{ raises the base to the exponent }
+  CONST
+    cTiny = 1e-15;
+
+  VAR
+    Power : Double; { Value before sign correction }
+
+  BEGIN
+    Power := 0;
+    { Deal with the near zero special cases }
+    IF (Abs(Base) < cTiny) THEN BEGIN
+      Base := 0.0;
+    END; { IF }
+    IF (Abs(Exponent) < cTiny) THEN BEGIN
+      Exponent := 0.0;
+    END; { IF }
+
+    { Deal with the exactly zero cases }
+    IF (Base = 0.0) THEN BEGIN
+      Power := 0.0;
+    END; { IF }
+    IF (Exponent = 0.0) THEN BEGIN
+      Power := 1.0;
+    END; { IF }
+
+    { Cover everything else }
+    IF ((Base < 0) AND (Exponent < 0)) THEN
+        Power := 1/Exp(-Exponent*Ln(-Base))
+    ELSE IF ((Base < 0) AND (Exponent >= 0)) THEN
+        Power := Exp(Exponent*Ln(-Base))
+    ELSE IF ((Base > 0) AND (Exponent < 0)) THEN
+        Power := 1/Exp(-Exponent*Ln(Base))
+    ELSE IF ((Base > 0) AND (Exponent >= 0)) THEN
+        Power := Exp(Exponent*Ln(Base));
+
+    { Correct the sign }
+    IF ((Base < 0) AND (Frac(Exponent/2.0) <> 0.0)) THEN
+      Result := -Power
+    ELSE
+      Result := Power;
+  END; { FUNCTION Pow }
+
+// On Changing Decimal Edit
+procedure TForm1.FloatAnimation1Finish(Sender: TObject);
+begin
+  floatanimation2.Enabled := true;
+end;
+
+procedure TForm1.FloatAnimation2Finish(Sender: TObject);
+begin
+  floatanimation3.Enabled := true;
+end;
+
+procedure TForm1.FloatAnimation3Finish(Sender: TObject);
+begin
+  sleep(1500);
+  tabcontrol1.TabIndex := 1;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var
+  ex:real;
+begin
+
+
+  //showmessage(floattostr(Power2(2,8)));
+
+end;
+
+procedure TForm1.Rectangle10Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'3';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'3';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle11Click(Sender: TObject);
+begin
+  edit1.Text :='';
+  edit2.Text :='';
+end;
+
+procedure TForm1.Rectangle12Click(Sender: TObject);
+var
+  lengthNum,i,j,h,NumDecimal,NumBinary,num,power,s,r :integer;
+  pr,q,dec:string;
+  //power :real;
+begin
+  if whichOneIsActive='decimal' then begin
+    num := strtoint(edit1.Text);
+
+    s := num;
+    while num>0 do begin
+      //num := num div 2;
+      r := num mod 2;
+      num := num div 2;
+      q := q + inttostr(r);
+    end;
+
+    for i := length(q) downto 1 do begin
+      dec := dec + q[i];
+    end;
+    edit2.Text:= dec;
+
+  end else begin
+    if whichOneIsActive='binary' then begin
+      lengthNum := length(edit2.Text);
+      i:=1;
+      j:= lengthNum-1;
+      num := 0;
+      while i<= lengthNum do begin
+        pr := floattostr(power2(2,j));
+        power := strtoint(pr);
+        num := num + (strtoint(edit2.Text[i]) * power);
+        j:=j-1;
+        i:=i+1;
+      end;
+      edit1.Text:= inttostr(num);
+    end;
+  end;
+
+end;
+
+procedure TForm1.Rectangle13Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    if edit1.Text<>'' then edit1.Text := edit1.text+'0';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      if edit2.Text<>'' then   edit2.Text := edit2.Text+'0';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle14Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    if (isCommaSelected=false) then edit1.Text := edit1.text+'.';
+    isCommaSelected := true;
+  end else begin
+    if whichOneIsActive='binary' then begin
+      if (isCommaSelected=true) then edit1.Text := edit1.text+'.';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle16Click(Sender: TObject);
+begin
+  Rectangle16.Stroke.Thickness := 7;
+  Rectangle18.Stroke.Thickness := 0;
+  whichOneIsActive :='decimal';
+end;
+
+procedure TForm1.Rectangle18Click(Sender: TObject);
+begin
+  Rectangle18.Stroke.Thickness := 7;
+  Rectangle16.Stroke.Thickness := 0;
+  whichOneIsActive :='binary';
+end;
+
+procedure TForm1.Rectangle1DblClick(Sender: TObject);
+begin
+  application.Terminate;
+end;
+
+procedure TForm1.Rectangle1MouseDown(Sender: TObject; Button: TMouseButton;
+  Shift: TShiftState; X, Y: Single);
+begin
+  if (Button = TMouseButton.mbLeft) then StartWindowDrag;
+end;
+
+
+
+procedure TForm1.Rectangle2Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'7';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'7';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle3Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'8';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'8';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle4Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'9';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'9';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle5Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'4';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'4';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle6Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'5';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'5';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle7Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'6';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'6';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle8Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'1';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'1';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle9Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    edit1.Text := edit1.text+'2';
+  end else begin
+    if whichOneIsActive='binary' then begin
+      edit2.Text := edit2.Text+'2';
+    end;
+  end;
+end;
+
+end.

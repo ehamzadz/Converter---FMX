@@ -98,6 +98,7 @@ type
     procedure FloatAnimation1Finish(Sender: TObject);
     procedure FloatAnimation2Finish(Sender: TObject);
     procedure FloatAnimation3Finish(Sender: TObject);
+    procedure Rectangle14Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -109,6 +110,7 @@ var
   editDecimal,editBinary :string;
   whichOneIsActive :string;
   editDecimalContent, editBinaryContent:string;
+  isCommaSelected :boolean;
 
 implementation
 
@@ -202,16 +204,21 @@ procedure TForm1.Rectangle11Click(Sender: TObject);
 begin
   edit1.Text :='';
   edit2.Text :='';
+  isCommaSelected := false;
 end;
 
 procedure TForm1.Rectangle12Click(Sender: TObject);
 var
   lengthNum,i,j,h,NumDecimal,NumBinary,num,power,s,r :integer;
-  pr,q,dec:string;
+  pr,q,dec,N:string;
+  num2 :real;
   //power :real;
 begin
   if whichOneIsActive='decimal' then begin
     num := strtoint(edit1.Text);
+
+    //N :=  floattostr(num2:2);
+    //num2 := strtoint(floattostr(num2));
 
     s := num;
     while num>0 do begin
@@ -247,13 +254,24 @@ end;
 
 procedure TForm1.Rectangle13Click(Sender: TObject);
 begin
-
-
   if whichOneIsActive='decimal' then begin
     if edit1.Text<>'' then edit1.Text := edit1.text+'0';
   end else begin
     if whichOneIsActive='binary' then begin
       if edit2.Text<>'' then   edit2.Text := edit2.Text+'0';
+    end;
+  end;
+end;
+
+procedure TForm1.Rectangle14Click(Sender: TObject);
+begin
+  if whichOneIsActive='decimal' then begin
+    if (isCommaSelected=false) then edit1.Text := edit1.text+'.';
+    isCommaSelected := true;
+  end else begin
+    if whichOneIsActive='binary' then begin
+      if (isCommaSelected=true) then edit1.Text := edit2.text+'.';
+      isCommaSelected := true;
     end;
   end;
 end;
